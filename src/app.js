@@ -79,8 +79,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //public 
 
 //routers
-app.use('/login', require('./router/login.router'))
+app.use('login/', require('./router/login.router'))
 //app.use(require('./router/empleados.router'))
 app.use(require('./router/inicio.router'))
-
 module.exports = app;
