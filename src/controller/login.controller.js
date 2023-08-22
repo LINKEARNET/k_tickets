@@ -2,11 +2,11 @@ const loginCtl = {};
 const passport = require("passport");
 
 loginCtl.showLogin = (req, res) => {
-  res.render("login/login");
+  res.render("login");
 };
 
 loginCtl.login = passport.authenticate("local.signin", {
-    successRedirect: "/inicio",
+    successRedirect: "/",
     failureRedirect: "/",
     failureFlash: true,
 });

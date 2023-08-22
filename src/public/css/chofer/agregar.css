@@ -80,7 +80,7 @@ body {
 
 #container .fondo{
     opacity: 0.5;
-    width: 1129px;
+    width: 1060px;
     height: 575px;
     position: absolute;
     left: 110px;
@@ -94,12 +94,12 @@ body {
 #name{
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
-    top: 214px;
+    top: 225px;
     left: 526px;
 }
 #nombre{
     position: absolute;
-    right: 525px;
+    right: 420px;
     width: 310px;
     height: 30px;
     border-radius: 9px;
@@ -110,13 +110,13 @@ body {
 #apelli{
     position: relative;
     left: 470px;
-    top: -45px;
+    top: -30px;
     font-family: Arial, Helvetica, sans-serif;
 }
 #apellido{
     position: absolute;
-    right: 140px;
-    width: 310px;
+    right: 180px;
+    width: 270px;
     height: 30px;
     border-radius: 9px;
     padding: 0px, 31px, 0px, 7px;
@@ -134,7 +134,7 @@ body {
     position: relative;
     left: 610px;
     top: -30px;
-    width: 310px;
+    width: 265px;
     height: 30px;
     border-radius: 9px;
     border-color: #000000;
@@ -200,7 +200,7 @@ body {
     top: -53px;
     position: relative;
     right: -770px;
-    width: 310px;
+    width: 265px;
     height: 30px;
     border-radius: 9px;
     border-color: #000000;
@@ -280,7 +280,7 @@ body {
 }
 #fechaemision{
     position: relative;
-    right: 438px;
+    right: 440px;
     top: 65px;
     width: 310px;
     height: 30px;
@@ -331,7 +331,7 @@ body {
     top: -28px;
     position: relative;
     right: -775px;
-    width: 310px;
+    width: 265px;
     height: 30px;
     border-radius: 9px;
     border-color: #000000;
@@ -347,7 +347,7 @@ body {
     position: relative;
     right: -410px;
     top: -86px;
-    width: 310px;
+    width: 265px;
     height: 30px;
     border-radius: 9px;
     border-color: #000000;
@@ -364,7 +364,7 @@ button {
   cursor: pointer;
   margin-bottom: 10px;
   position: relative;
-  left: 850px;
+  left: 800px;
   top: -24px;
 }
 

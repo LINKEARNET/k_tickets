@@ -1,11 +1,10 @@
 const empleadoCtl = {}
 const sql = require('../Database/dataBase.sql')
 const orm = require('../Database/dataBase.orm')
-//res.render('empleado/editar');
-//res.render('empleado/agregar');
+
 
 empleadoCtl.mostrar = (req, res) => {
-    res.render('empleados/agregar');
+    res.render('empleado/agregar');
 }
 
 //mandar
@@ -27,19 +26,19 @@ empleadoCtl.mandar = async (req, res) => {
         }
     await orm.empleado.create(nuevoEnvio)
     req.flash('success', 'Guardado exitosamente')
-    res.redirect('/empleados/listar/' + id)
+    res.redirect('/empleado/listar/' + id)
 }
 
 empleadoCtl.listar = async (req, res) => {
     const lista = await sql.query('select * from empleados')
-    res.render('empleados/listar', { lista })
+    res.render('/empleado/listar', { lista })
 }
 
 //traer datos
 empleadoCtl.traer = async (req, res) => {
     const ids = req.params.id
     const lista = await sql.query('select * from empleados where id_empleado =?', [ids])
-    res.render('empleados/editar', { lista })
+    res.render('empleado/editar', { lista })
 }
 
 empleadoCtl.actualizar = async (req, res) => {
@@ -64,7 +63,7 @@ empleadoCtl.actualizar = async (req, res) => {
             actualizar.update(nuevoEnvio)
         })
     req.flash('success', 'Actualizado exitosamente')
-    res.redirect('/empleados/listar/' + id);
+    res.redirect('/empleado/listar/' + id);
 }
 empleadoCtl.eliminar = async (req, res) => {
     const ids = req.params.id
@@ -72,7 +71,7 @@ empleadoCtl.eliminar = async (req, res) => {
     await orm.empleado.destroy({ where: { id_empleado: ids } })
         .then(() => {
             req.flash('success', 'Eliminado exitosamente')
-            res.redirect('/empleados/listar/' + id);
+            res.redirect('/empleado/listar/' + id);
         })
 }
 

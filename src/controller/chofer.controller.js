@@ -3,7 +3,7 @@ const sql = require('../Database/dataBase.sql')
 const orm = require('../Database/dataBase.orm')
 
 choferCtl.mostrar = (req, res) => {
-    res.render('choferes/agregar');
+    res.render('chofer/agregar');
 }
 
 //mandar
@@ -23,19 +23,19 @@ choferCtl.mandar = async (req, res) => {
     }
     await orm.chofer.create(nuevoEnvio)
     req.flash('success', 'Guardado exitosamente')
-    res.redirect('/choferes/listar/' + id)
+    res.redirect('/chofer/listar/' + id)
 }
 
 choferCtl.listar = async (req, res) => {
     const lista = await sql.query('select * from choferes')
-    res.render('choferes/listar', { lista })
+    res.render('chofer/listar', { lista })
 }
 
 //traer datos
 choferCtl.traer = async (req, res) => {
     const ids = req.params.id
     const lista = await sql.query('select * from choferes where id_chofer =?', [ids])
-    res.render('choferes/editar', { lista })
+    res.render('chofer/editar', { lista })
 }
 
 choferCtl.actualizar = async (req, res) => {
@@ -58,7 +58,7 @@ choferCtl.actualizar = async (req, res) => {
             actualizar.update(nuevoEnvio)
         })
     req.flash('success', 'Actualizado exitosamente')
-    res.redirect('/choferes/listar/' + id);
+    res.redirect('/chofer/listar/' + id);
 }
 choferCtl.eliminar = async (req, res) => {
     const ids = req.params.id
@@ -66,7 +66,7 @@ choferCtl.eliminar = async (req, res) => {
     await orm.chofer.destroy({ where: { id_chofer: ids } })
         .then(() => {
             req.flash('success', 'Eliminado exitosamente')
-            res.redirect('/choferes/listar/' + id);
+            res.redirect('/chofer/listar/' + id);
         })
 }
 

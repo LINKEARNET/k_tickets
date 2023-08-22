@@ -79,17 +79,17 @@ app.use(express.static(path.join(__dirname, 'public')));
 //public 
 
 //routers
-app.use('login/', require('./router/login.router'))
+app.use(require('./router/login.router'))
 app.use(require('./router/inicio.router'))
 app.use(require('./router/bus.router'))
-app.use(require('./router/encomienda_destinatario.router'))
-app.use(require('./router/encomienda_remitente.router'))
+//app.use(require('./router/encomienda_destinatario.router'))
+app.use('/encomienda',require('./router/encomienda_remitente.router'))
 app.use(require('./router/cooperativa.router'))
-app.use(require('./router/empleado.router'))
-app.use(require('./router/chofer.router'))
+app.use('/empleado',require('./router/empleado.router'))
+app.use('/chofer', require('./router/chofer.router'))
 app.use(require('./router/ciudad.router'))
 app.use(require('./router/detalle_cooperativa.router'))
-app.use(require('./router/detalle_encomienda.router'))
+//app.use(require('./router/detalle_encomienda.router'))
 app.use(require('./router/detalle_transporte.router'))
 app.use(require('./router/encargado.router'))
 app.use(require('./router/licencias.router'))
