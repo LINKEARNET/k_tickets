@@ -3,7 +3,7 @@ const { Mostrar, mandar } = require('../controller/inicio2.controller');
 
 const router = express.Router();
 
-router.get ('/', Mostrar)
-router.post ('/', mandar)
+router.get ('/inicio2', Mostrar)
+router.post ('/inicio2', mandar)
 
 module.exports = router

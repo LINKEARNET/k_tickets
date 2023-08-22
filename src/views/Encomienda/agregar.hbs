@@ -1,14 +1,15 @@
 <link rel="stylesheet" href="/css/encomienda/agregar.css">
-<form action="/"method="post">
+<form action="/encomienda"method="post">
 <body>
 <head>
-    <div id="contendodrhe">
+      <div id="contendodrhe">
         <div>
             <div class="navbar">
                 <div id="imagen">
                     <img src="/img/logon.png"></img></div>
-                    <a id="inicio" href="#">Inicio</a>
-                    <button id="boton" type="button" href="#">Ingresar</button>
+                 <a href="/inicio2">Inicio</a>
+                    <a id="administrador" href="#">Administrador</a>
+                    <img id="img2" src="/img/perfil.png" alt="">
             </div>
     </div>
 </head>
@@ -20,10 +21,10 @@
       <label id="name" for="nombre">Nombres Completos:</label> <br>
       <input type="text" id="nombre" name="nombre" required>
 
-      <label id="numeroce" for="apellido">Numero de Cedula:</label>
-      <input type="text" id="cedula" name="cedula" required>
+      <label id="numeroce1" for="apellido"> Cedula:</label>
+      <input type="text" id="cedula1" name="cedula" required>
 
-      <label id="numetelef" for="apellido">Numero de Telefono:</label>
+      <label id="numetelef" for="apellido"> Telefono:</label>
       <input type="text" id="telefono" name="telefono" required>
 
         <br> <br>
@@ -38,13 +39,13 @@
       <label id="name" for="nombre">Nombres Completos:</label> <br>
       <input type="text" id="nombre" name="nombre" required>
 
-      <label id="numeroce" for="apellido">Numero de Cedula:</label>
-      <input type="text" id="cedula" name="cedula" required>
+      <label id="numeroce2" for="apellido">Cedula:</label>
+      <input type="text" id="cedula2" name="cedula" required>
 
-      <label id="numetelef" for="apellido">Numero de Telefono:</label>
-      <input type="text" id="telefono" name="telefono" required>
+      <label id="numetelef" for="apellido"> Telefono:</label>
+      <input type="text" id="telefono" name="telefono" required> <br>
 
-      <label id="calle" for="callepri">Calle Principal:</label> <br>
+      <label id="calle" for="callepri">Calle Principal:</label> <br> <br>
       <input type="text" id="callepri" name="callepri" required>
 
       <label id="calles" for="calles">Calle Secundaria:</label>
@@ -59,11 +60,11 @@
       <label id="nameco" for="nomcoop">Nombre Cooperativa:</label> <br>
       <input type="text" id="nomcoop" name="nomcoop" required>
 
-      <label id="telfC" for="telefonocelu">Tamaño de encomienda:</label> <br>
+      <label id="telfC" for="telefonocelu">Tamaño de encomienda:</label>
       <input type="text" id="telefonoC" name="telefonocelu" required>
 
       <label id="date" for="fecha">Fecha y hora de envio:</label> 
-      <input type="datetime-local" id="fecha" name="fecha" required>
+      <input type="datetime-local" id="fecha" name="fecha" required> <br>
 
       <label id="numreg" for="registro">Numero de registro de transporte:</label>
       <input type="text" id="registro" name="registro" required>

@@ -3,7 +3,7 @@ const router = express.Router();
 const { mostrar, mandar} = require("../controller/ciudad.controller");
 
 
-router.get('/agregar/:id',mostrar);
+router.get('/agregar',mostrar);
 router.post('/agregar/:id',mandar);
 
 

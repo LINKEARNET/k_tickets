@@ -62,7 +62,7 @@ body {
     width: 4%; 
     height: 10%;
     position: absolute;
-    left: 1260px;
+    left: 1224px;
     top: -4px;
     padding: 9px 0;
 }
@@ -86,7 +86,7 @@ body {
 
 #container .fondo{
     opacity: 0.5;
-    width: 1129px;
+    width: 1060px;
     height: 470px;
     position: absolute;
     left: 110px;
@@ -105,7 +105,7 @@ body {
 }
 #nombre{
     position: absolute;
-    right: 328px;
+    right: 270px;
     top: 270px;
     width: 400px;
     height: 30px;
@@ -122,7 +122,7 @@ body {
 }
 #nroplaca{
     position: absolute;
-    right: 910px;
+    right: 845px;
     top: 270px;
     width: 310px;
     height: 30px;
@@ -177,7 +177,7 @@ body {
     position: relative;
     right: -650px;
     top: -30px;
-    width: 310px;
+    width: 250px;
     height: 30px;
     border-radius: 3px;
     border-color: #000000;
@@ -186,14 +186,14 @@ body {
 }
 #partida{
     position: relative;
-    left: -435px;
+    left: -300px;
     top: 135px;
     font-family: Arial, Helvetica, sans-serif;
 }
 #partidaa{
     top: 140px;
     position: relative;
-    right: 0px;
+    right: -90px;
     width: 310px;
     height: 30px;
     border-radius: 10px;
@@ -230,8 +230,8 @@ button {
   cursor: pointer;
   margin-bottom: 10px;
   position: relative;
-  left: 850px;
-  top: -24px;
+  left: 785px;
+  top: -35px;
 }
 
 .registrarse button {

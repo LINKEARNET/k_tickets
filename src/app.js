@@ -81,7 +81,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //routers
 app.use(require('./router/login.router'))
 app.use(require('./router/inicio.router'))
-app.use(require('./router/bus.router'))
+app.use('/buses',require('./router/bus.router'))
 //app.use(require('./router/encomienda_destinatario.router'))
 app.use('/encomienda',require('./router/encomienda_remitente.router'))
 app.use(require('./router/cooperativa.router'))

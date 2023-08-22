@@ -53,17 +53,17 @@ choferCtl.actualizar = async (req, res) => {
         email_chofer, 
         celular_chofer
     }
-    await orm.chofer.findOne({ where: { id_chofer: ids } })
+    await orm.chofer.findOne({ where: { id_chofer: id } })
         .then(actualizar => {
             actualizar.update(nuevoEnvio)
         })
     req.flash('success', 'Actualizado exitosamente')
-    res.redirect('/chofer/listar/' + id);
+    res.redirect('/chofer/listar/');
 }
 choferCtl.eliminar = async (req, res) => {
     const ids = req.params.id
     const id = req.user.id_usuario
-    await orm.chofer.destroy({ where: { id_chofer: ids } })
+    await orm.chofer.destroy({ where: { id_chofer: id } })
         .then(() => {
             req.flash('success', 'Eliminado exitosamente')
             res.redirect('/chofer/listar/' + id);
