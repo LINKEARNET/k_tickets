@@ -9,10 +9,10 @@ detalle_encomiendaCtl.mostrar = (req, res) => {
 //mandar
 detalle_encomiendaCtl.mandar = async (req, res) => {
     const id = req.user.id_terminal
-    const { nombres_cooperativa_detalle_encomienda,tamaño_detalle_encomienda,fecha_envio_detalle_encomienda,numero_registro_detalle_encomienda,peso_detalle_encomienda} = req.body
+    const { nombres_cooperativa_detalle_encomienda,tamano_detalle_encomienda,fecha_envio_detalle_encomienda,numero_registro_detalle_encomienda,peso_detalle_encomienda} = req.body
     const nuevoEnvio = {
         nombres_cooperativa_detalle_encomienda,
-        tamaño_detalle_encomienda,
+        tamano_detalle_encomienda,
         fecha_envio_detalle_encomienda,
         numero_registro_detalle_encomienda,
         peso_detalle_encomienda
@@ -37,10 +37,10 @@ detalle_encomiendaCtl.traer = async (req, res) => {
 detalle_encomiendaCtl.actualizar = async (req, res) => {
     const id = req.user.id_terminal
     const ids = req.params.id
-    const { nombres_cooperativa_detalle_encomienda,tamaño_detalle_encomienda,fecha_envio_detalle_encomienda,numero_registro_detalle_encomienda,peso_detalle_encomienda} = req.body
+    const { nombres_cooperativa_detalle_encomienda,tamano_detalle_encomienda,fecha_envio_detalle_encomienda,numero_registro_detalle_encomienda,peso_detalle_encomienda} = req.body
     const nuevoEnvio = {
         nombres_cooperativa_detalle_encomienda,
-        tamaño_detalle_encomienda,
+        tamano_detalle_encomienda,
         fecha_envio_detalle_encomienda,
         numero_registro_detalle_encomienda,
         peso_detalle_encomienda

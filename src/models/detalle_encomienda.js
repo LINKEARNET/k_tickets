@@ -6,7 +6,7 @@ const detalle_encomienda = (sequelize, type) => {
             autoIncrement: true
         },
         nombres_cooperativa_detalle_encomienda: type.STRING,
-        tamaño_detalle_encomienda: type.STRING,
+        tamano_detalle_encomienda: type.STRING,
         fecha_envio_detalle_encomienda: type.STRING,
         numero_registro_detalle_encomienda: type.STRING,
         peso_detalle_encomienda: type.STRING,
