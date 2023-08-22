@@ -80,6 +80,23 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //routers
 app.use('login/', require('./router/login.router'))
-//app.use(require('./router/empleados.router'))
 app.use(require('./router/inicio.router'))
+app.use(require('./router/bus.router'))
+app.use(require('./router/encomienda_destinatario.router'))
+app.use(require('./router/encomienda_remitente.router'))
+app.use(require('./router/cooperativa.router'))
+app.use(require('./router/empleado.router'))
+app.use(require('./router/chofer.router'))
+app.use(require('./router/ciudad.router'))
+app.use(require('./router/detalle_cooperativa.router'))
+app.use(require('./router/detalle_encomienda.router'))
+app.use(require('./router/detalle_transporte.router'))
+app.use(require('./router/encargado.router'))
+app.use(require('./router/licencias.router'))
+app.use(require('./router/rutas.router'))
+app.use(require('./router/terminal.router'))
+app.use(require('./router/inicio2.router'))
+
+
+
 module.exports = app;
