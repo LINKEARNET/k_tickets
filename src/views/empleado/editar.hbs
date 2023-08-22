@@ -1,8 +1,7 @@
-<link rel="stylesheet" href="/css/empleados/empleados.css">
-<from action="/"method="post">
+<link rel="stylesheet" href="/css/empleados/editar.css">
+<form action="/"method="post">
 <body>
 <head>
-    <head>
     <div id="contendodrhe">
         <div>
             <div class="navbar">
@@ -20,22 +19,24 @@
     
     <form action="#" method="post">
         <div>
-                    <label>Id: </label>
-                    <input type="text" name="id_empleado" value="{{id_empleado}}" readonly  >
-                  </div>
-      <label id="name" for="nombre">Nombre</label> <br>
-     <input type="text" name="nombres_empleado" value="{{nombres_empleado}}" readonly  >
-      <label id="apelli" for="apellido">Apellido:</label>
-      <input type="text" id="apellido_empleado" name="apellido_empleado" value="{{apellido_empleado}}" required>
+            <label>Id: </label>
+            <input type="text" name="id_empleado_remitente" value="{{id_empleado}}" readonly  >
+        </div> <br>
 
-      <label id="nunce" for="Cedula">Cedula:</label> 
-      <input type="text" id="cedula_empleado" name="cedula_empleado" value="{{cedula_empleado}}" required>
+      <label id="name" for="nombre">Nombre</label> <br>
+        <input type="text" id="nombre" name="nombre" value="{{nombres_empleado}}" required>
+      
+      <label id="apelli" for="apellido">Apellido:</label> 
+      <input type="text" id="apellido" name="apellido" value="{{apellido_empleado}}" required>
+
+      <label id="date" for="fecha_nacimiento">Fecha de Nacimiento:</label> 
+      <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" value="{{fecha_nacimiento_empleado}}" required>
         <br> <br>
-      <label id="date" for="cedula"> fecha_nacimiento:</label> <br>
-     <input type="text" id="fecha_nacimiento_empleado" name="fecha_nacimiento_empleado" value="{{fecha_nacimiento_empleado}}" required>
+      <label id="numce" for="cedula">Número de Cédula:</label> <br>
+      <input type="text" id="cedula" name="cedula" value="{{cedula_empleado}}" required>
 
       <label id="sexo" for="sexo">Sexo:</label>
-      <select id="sexoSele" name="sexo" required>
+      <select id="sexoSele" name="sexo" value="{{sexo_empleado}}" required>
         <option value="masculino">Masculino</option>
         <option value="femenino">Femenino</option>
         <option value="otro">Otro</option> <br>
@@ -45,35 +46,39 @@
 
     <u><h3>Lugar de residencia</h3></u>
 
-    
+        <div>
+            <label>Id: </label>
+            <input type="text" name="id_empleado" value="{{id_empleado}}" readonly  >
+        </div> <br>
 
-      <label id="pronvin" for="apellido">Provincia</label>
-     <input type="text" id="nombres_remitente" name="nombres_remitente" value="{{provincia_empleado}}" required>
-
-     
+      <label id="sect" for="fecha_nacimiento">Sector</label> 
+      <input type="text" id="sector" name="sector" value="{{id_empleado_residencia}}" required>
         <br> <br>
-        
-      <label id="calleP" for="nombre">Calle principal</label> <br>
-      <input type="text" id="calle_principal_empleado" name="calle_principal_empleado" value="{{calle_principal_empleado}}" required>
-       
-       <label id="calleSe" for="nombre">Calle secundaria</label> 
-      <input type="text" id="calle_secundaria" name="calle_secundaria" value="{{calle_secundaria_empleado}}" required>
-       
+      <label id="calleSe" for="nombre">Calle secundaria</label> <br>
+      <input type="text" id="callesecu" name="calleS" value="{{calle_secundaria}}" required>
+
+      <label id="calleP" for="nombre">Calle principal</label>
+      <input type="text" id="callepri" name="calleP" value="{{calle_principal_empleado}}" required>
         <br> <br>
 
       <u><h3>Contactos</h3></u>
 
-      <label id="telfC" for="telefonocelu">Celular</label> <br>
-       <input type="number" id="celular_empleado" name="celular_empleado" value="{{celular_empleado}}" required>
+        <div>
+            <label>Id: </label>
+            <input type="text" name="id_empleado" value="{{id_empleado}}" readonly  >
+        </div>
+
+      <label id="telfC" for="telefonocelu">Telefono Celular</label> <br>
+      <input type="text" id="telefonoC" name="telefonocelu" value="{{celular_empleado}}" required>
 
       <label id="teleCo" for="telefonoconv">Telefono Convencional</label>
-       <input type="number" id="telefono_empleado" name="telefono_empleado" value="{{telefono_empleado}}" required>
+      <input type="text" id="telefonoCo" name="telefonoconv" value="{{telefono_empleado}}" required>
 
       <label id="email" for="emailCorreo">Email@</label> 
-       <input type="text" id="email_empleado" name="email_empleado" value="{{email_empleado}}" required>
+      <input type="text" id="Email" name="Email" value="{{email_empleado}}" required>
 
       <label id="area" for="Area">Area:</label> <br> <br>
-      <select id="AreaTra" name="area" required>
+      <select id="AreaTra" name="area" value="{{area_empleado}}" required>
         <option value="chofer">Chofer</option>
         <option value="bodegero">Bodegero</option>
         <option value="buses">Buses</option>

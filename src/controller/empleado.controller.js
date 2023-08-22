@@ -1,6 +1,8 @@
 const empleadoCtl = {}
 const sql = require('../Database/dataBase.sql')
 const orm = require('../Database/dataBase.orm')
+//res.render('empleado/editar');
+//res.render('empleado/agregar');
 
 empleadoCtl.mostrar = (req, res) => {
     res.render('empleados/agregar');

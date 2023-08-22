@@ -100,7 +100,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 #nombre{
-    width: 310px;
+    width: 250px;
     height: 30px;
     border-radius: 5px 2px;
     padding: 0px, 31px, 0px, 7px;
@@ -113,7 +113,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 #apellido{
-    width: 310px;
+    width: 250px;
     height: 30px;
     border-radius: 5px 2px;
     padding: 0px, 31px, 0px, 7px;
@@ -141,7 +141,7 @@ body {
 #cedula{
     position: relative;
     right: 0px;
-    width: 310px;
+    width: 250px;
     height: 30px;
     border-radius: 5px 2px;
 }
@@ -154,7 +154,7 @@ body {
 #sexoSele{
     position: relative;
     right: -20px;
-    width: 310px;
+    width: 250px;
     height: 30px;
     border-radius: 5px 2px;
 }
@@ -162,13 +162,13 @@ body {
 #sect{
     position: relative;
     left: 0px;
-    top: -10px;
+    top: -25px;
     font-family: Arial, Helvetica, sans-serif;
 }
 #sector{
-    top: 0px;
+    top: 9px;
     position: relative;
-    right: 0px;
+    right: 50px;
     width: 310px;
     height: 30px;
     border-radius: 5px 2px;
