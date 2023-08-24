@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="/css/empleados/editar.css">
-<form action="/"method="post">
+<form action="/empleado/editar/{{id_empleado}}"method="post">
 <body>
 <head>
     <div id="contendodrhe">
@@ -16,69 +16,51 @@
   <div id="container">
     <h2>Registro de empleados</h2>
     <u><h3>Datos personales</h3></u>
-    
-    <form action="#" method="post">
-        <div>
-            <label>Id: </label>
-            <input type="text" name="id_empleado_remitente" value="{{id_empleado}}" readonly  >
-        </div> <br>
 
       <label id="name" for="nombre">Nombre</label> <br>
-        <input type="text" id="nombre" name="nombre" value="{{nombres_empleado}}" required>
+        <input type="text" id="nombre" name="nombres_empleado" value="{{nombres_empleado}}" required>
       
       <label id="apelli" for="apellido">Apellido:</label> 
-      <input type="text" id="apellido" name="apellido" value="{{apellido_empleado}}" required>
+      <input type="text" id="apellido" name="apellido_empleado" value="{{apellido_empleado}}" required>
 
       <label id="date" for="fecha_nacimiento">Fecha de Nacimiento:</label> 
-      <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" value="{{fecha_nacimiento_empleado}}" required>
+      <input type="date" id="fecha_nacimiento" name="fecha_nacimiento_empleado" value="{{fecha_nacimiento_empleado}}" required>
         <br> <br>
       <label id="numce" for="cedula">Número de Cédula:</label> <br>
-      <input type="text" id="cedula" name="cedula" value="{{cedula_empleado}}" required>
+      <input type="text" id="cedula" name="cedula_empleado" value="{{cedula_empleado}}" required>
 
       <label id="sexo" for="sexo">Sexo:</label>
-      <select id="sexoSele" name="sexo" value="{{sexo_empleado}}" required>
+      <select id="sexoSele" name="sexo_empleado" value="{{sexo_empleado}}" required>
         <option value="masculino">Masculino</option>
         <option value="femenino">Femenino</option>
         <option value="otro">Otro</option> <br>
 
       </select> <br> <br>
-    </form> <br>
+    <br>
 
     <u><h3>Lugar de residencia</h3></u>
 
-        <div>
-            <label>Id: </label>
-            <input type="text" name="id_empleado" value="{{id_empleado}}" readonly  >
-        </div> <br>
-
-      <label id="sect" for="fecha_nacimiento">Sector</label> 
-      <input type="text" id="sector" name="sector" value="{{id_empleado_residencia}}" required>
         <br> <br>
       <label id="calleSe" for="nombre">Calle secundaria</label> <br>
-      <input type="text" id="callesecu" name="calleS" value="{{calle_secundaria}}" required>
+      <input type="text" id="callesecu" name="calle_secundaria" value="{{calle_secundaria}}" required>
 
       <label id="calleP" for="nombre">Calle principal</label>
-      <input type="text" id="callepri" name="calleP" value="{{calle_principal_empleado}}" required>
+      <input type="text" id="callepri" name="calle_principal_empleado" value="{{calle_principal_empleado}}" required>
         <br> <br>
 
       <u><h3>Contactos</h3></u>
 
-        <div>
-            <label>Id: </label>
-            <input type="text" name="id_empleado" value="{{id_empleado}}" readonly  >
-        </div>
-
       <label id="telfC" for="telefonocelu">Telefono Celular</label> <br>
-      <input type="text" id="telefonoC" name="telefonocelu" value="{{celular_empleado}}" required>
+      <input type="text" id="telefonoC" name="celular_empleado" value="{{celular_empleado}}" required>
 
       <label id="teleCo" for="telefonoconv">Telefono Convencional</label>
-      <input type="text" id="telefonoCo" name="telefonoconv" value="{{telefono_empleado}}" required>
+      <input type="text" id="telefonoCo" name="telefono_empleado" value="{{telefono_empleado}}" required>
 
       <label id="email" for="emailCorreo">Email@</label> 
-      <input type="text" id="Email" name="Email" value="{{email_empleado}}" required>
+      <input type="text" id="Email" name="email_empleado" value="{{email_empleado}}" required>
 
       <label id="area" for="Area">Area:</label> <br> <br>
-      <select id="AreaTra" name="area" value="{{area_empleado}}" required>
+      <select id="AreaTra" name="area_empleado" value="{{area_empleado}}" required>
         <option value="chofer">Chofer</option>
         <option value="bodegero">Bodegero</option>
         <option value="buses">Buses</option>

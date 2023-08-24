@@ -9,7 +9,6 @@ empleadoCtl.mostrar = (req, res) => {
 
 //mandar
 empleadoCtl.mandar = async (req, res) => {
-    const id = req.user.id_terminal
     const { nombres_empleado,apellido_empleado,cedula_empleado,fecha_nacimiento_empleado,sexo_empleado,calle_principal_empleado,calle_secundaria,email_empleado,celular_empleado,telefono_empleado,area_empleado} = req.body
     const nuevoEnvio = {
         nombres_empleado,
@@ -26,12 +25,12 @@ empleadoCtl.mandar = async (req, res) => {
         }
     await orm.empleado.create(nuevoEnvio)
     req.flash('success', 'Guardado exitosamente')
-    res.redirect('/empleado/listar/' + id)
+    res.redirect('/empleado/listar/')
 }
 
 empleadoCtl.listar = async (req, res) => {
     const lista = await sql.query('select * from empleados')
-    res.render('/empleado/listar', { lista })
+    res.render('empleado/listar', { lista })
 }
 
 //traer datos
@@ -42,7 +41,6 @@ empleadoCtl.traer = async (req, res) => {
 }
 
 empleadoCtl.actualizar = async (req, res) => {
-    const id = req.user.id_terminal
     const ids = req.params.id
     const { nombres_empleado,apellido_empleado,cedula_empleado,fecha_nacimiento_empleado,sexo_empleado,calle_principal_empleado,calle_secundaria,email_empleado,celular_empleado,telefono_empleado,area_empleado} = req.body
     const nuevoEnvio = {
@@ -63,16 +61,13 @@ empleadoCtl.actualizar = async (req, res) => {
             actualizar.update(nuevoEnvio)
         })
     req.flash('success', 'Actualizado exitosamente')
-    res.redirect('/empleado/listar/' + id);
+    res.redirect('/empleado/listar/');
 }
 empleadoCtl.eliminar = async (req, res) => {
-    const ids = req.params.id
-    const id = req.user.id_usuario
-    await orm.empleado.destroy({ where: { id_empleado: ids } })
-        .then(() => {
+    const { id } = req.params;
+    await orm.empleado("DELETE FROM empleados WHERE ID = ?", [ids]);
             req.flash('success', 'Eliminado exitosamente')
-            res.redirect('/empleado/listar/' + id);
-        })
+            res.redirect('/empleado/listar/');
 }
 
 
