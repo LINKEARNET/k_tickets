@@ -34,7 +34,7 @@ sequelize.sync({ force: false })
 	const encargadoModel = require('../models/encargado');
 	//const encomiendaDestinatarioModel = require('../models/encomienda_destinatario');
 	const encomiendaRemitenteModel = require('../models/encomienda_remitente');
-	const licenciaModel = require('../models/licencia');
+	//const licenciaModel = require('../models/licencia');
 	const rutaModel = require('../models/ruta');
 	const terminalModel = require('../models/terminal');
 
@@ -52,7 +52,7 @@ const empleado =  empleadoModel(sequelize, Sequelize)
 const encargado =  encargadoModel(sequelize, Sequelize)
 //const encomienda_destinatario =  encomiendaDestinatarioModel(sequelize, Sequelize)
 const encomienda_remitente =  encomiendaRemitenteModel(sequelize, Sequelize)
-const licencia =  licenciaModel(sequelize, Sequelize)
+//const licencia =  licenciaModel(sequelize, Sequelize)
 const ruta =  rutaModel(sequelize, Sequelize)
 const terminal =  terminalModel(sequelize, Sequelize)
 
@@ -84,8 +84,8 @@ terminal.belongsTo(cooperativa)
 //encomienda_remitente.hasMany(encomienda_destinatario)
 //encomienda_destinatario.belongsTo(encomienda_remitente)
 
-licencia.hasMany(chofer)
-chofer.belongsTo(licencia)
+//licencia.hasMany(chofer)
+//chofer.belongsTo(licencia)
 
 ciudad.hasMany(empleado)
 empleado.belongsTo(ciudad)
@@ -116,5 +116,5 @@ module.exports = {
 	//encomienda_destinatario,
 	ruta,
 	terminal,
-	licencia
+	//licencia
 };

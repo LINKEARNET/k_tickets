@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="/css/chofer/agregar.css">
-<form action="/agregar/agregar"method="POST">
+<form action="/chofer/agregar"method="POST">
 <body>
 <head>
          <div id="contendodrhe">
@@ -20,24 +20,24 @@
     <u><h3>Datos personales</h3></u>
     <form action="#" method="post">
       <label id="numce" for="cedula">Cedula</label> <br>
-      <input type="number" id="cedula" name="cedula" required> 
+      <input type="number" id="cedula" name="cedula_chofer" required> 
 
       <label id="name" for="nombre">Nombres</label>
-      <input type="text" id="nombre" name="nombre" required>
+      <input type="text" id="nombre" name="nombres_chofer" required>
 
       <label id="apelli" for="apellido">Apellidos</label> 
-      <input type="text" id="apellido" name="apellido" required>
+      <input type="text" id="apellido" name="apellidos_chofer" required>
         <br> <br>
 
       <label id="sexo" for="sexo">Sexo</label>
-      <select id="sexoSele" name="sexo" required>
+      <select id="sexoSele" name="sexo_chofer" required>
         <option value="masculino">Masculino</option>
         <option value="femenino">Femenino</option>
         <option value="otro">Otro</option> 
       </select>
 
       <label id="estado" for="estado">Estado Civil</label>
-      <select id="estadoCivil" name="estado" required>
+      <select id="estadoCivil" name="estado_civil_chofer" required>
         <option value="soltero/a">Soltero/a</option>
         <option value="casado/a">Casado/a</option>
         <option value="divorciado/a">Divorciado/a</option>
@@ -45,47 +45,44 @@
       </select> <br> <br>
 
       <label id="date" for="fecha_nacimiento">Fecha de Nacimiento</label> 
-      <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+      <input type="date" id="fecha_nacimiento" name="fecha_nacimiento_chofer" required>
     </form> <br>
 
 
-      <label id="pronvin" for="apellido">Provincia</label>
+     <!-- <label id="pronvin" for="apellido">Provincia</label>
       <input type="text" id="provincia" name="provincia" required>
 
       <label id="parroquia" for="parroquia">Parroquia</label> <br>
       <input type="text" id="parroquiaIn" name="parroquia" required>
 
       <label id="canton" for="canton">Canton</label> <br>
-      <input type="text" id="cantonIn" name="canton" required>
+      <input type="text" id="cantonIn" name="canton" required> -->
 
 
       <label id="direccion" for="direccion">Direccion</label> <br>
-      <input type="text" id="direccionn" name="direccion" required>
+      <input type="text" id="direccionn" name="direccion_chofer" required>
       
       <label id="licencia" for="licencia">Tipo de Licencia</label>
-      <select id="tipolicencia" name="licencia" required>
+      <select id="tipolicencia" name="tipo_licencia" required>
         <option value="tipo A">Tipo A</option>
         <option value="tipo B">Tipo B</option>
         <option value="tipo C">Tipo C</option>
       </select> 
 
       <label id="email" for="emailCorreo">Email@</label> 
-      <input type="text" id="Email" name="Email" required>
+      <input type="text" id="Email" name="email_chofer" required>
 
       <label id="emision" for="emision">Fecha de Emisón</label>
-      <input type="date" id="fechaemision" name="emision" required>
+      <input type="date" id="fechaemision" name="fecha_emision_licencia" required>
         <br> <br>
 
         <label id="vencimiento" for="vencimiento">Fecha de Vencimiento</label>
-      <input type="date" id="fechavencimiento" name="vencimiento" required>
+      <input type="date" id="fechavencimiento" name="fecha_vencimiento_licencia" required>
         <br> <br>
 
 
       <label id="telfC" for="telefonocelu">Telefono Celular</label> <br>
-      <input type="number" id="telefonoC" name="telefonocelu" required>
-
-      <label id="cel" for="cel">Celular</label>
-      <input type="number" id="cell" name="cel" required>
+      <input type="number" id="telefonoC" name="celular_chofer" required>
 
         <br>
         <br>
