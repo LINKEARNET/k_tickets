@@ -15,7 +15,7 @@ inicioCtl.mandar = async(req, res)=>{
         provincia,
         canton
     }
-    await orm.ciudad.create(nuevoEvio)
+    await orm.inicio.create(nuevoEvio)
     req.flash('success', 'Guardado con exito')
     res.redirect('/inicio');
 }

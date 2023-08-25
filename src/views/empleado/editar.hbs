@@ -1,0 +1,90 @@
+<link rel="stylesheet" href="/src/public/css/Encomienda/listar.css">
+{{#each lista}}
+<form action="/empleado/editar/{{id_empleado}}" method="post">
+
+  <head>
+
+    <head>
+      <div id="contendodrhe">
+        <div>
+          <div class="navbar">
+            <div id="imagen">
+              <img src="/img/logon.png"></img>
+            </div>
+            <a id="inicio" href="/views/inicio.hbs">Inicio</a>
+            <a id="administrador" href="#">Administrador</a>
+            <img id="img2" src="/img/perfil.png" alt="">
+          </div>
+        </div>
+    </head>
+    <h1>Registro de Empleados</h1>
+    <div id="contenedor">
+
+      <div class="row">
+        
+        <div id="tarjeta">
+          <u>
+            <h2>Datos Personales</h2>
+          </u>
+
+          <div>
+            <input type="text" name="nombres_empleado" value="{{nombres_empleado}}" required
+              placeholder="Ingrese el titulo del video ">
+          </div>
+          <div>
+            <input type="text" name="apellido_empleado" value="{{apellido_empleado}}" required
+              placeholder="Ingrese el titulo del video ">
+          </div>
+          <div>
+            <input type="text" name="cedula_empleado" value="{{cedula_empleado}}" required
+              placeholder="Ingrese el titulo del video ">
+
+          </div>
+          <div>
+            <input type="date" name="fecha_nacimiento_empleado" value="{{fecha_nacimiento_empleado}}" required
+              placeholder="Ingrese el titulo del video ">
+
+          </div>
+
+          <div>
+            <select id="sexoSele" name="sexo_empleado" value="{{sexo_empleado}}" required>
+              <option value="masculino">Masculino</option>
+              <option value="femenino">Femenino</option>
+              <option value="otro">Otro</option> <br>
+            </select>
+          </div>
+
+          <div>
+            <input type="text" name="calle_principal_empleado" value="{{calle_principal_empleado}}" required
+              placeholder="Ingrese el titulo del video ">
+
+          </div>
+          <div>
+            <input type="text" name="calle_secundaria" value="{{calle_secundaria}}" required
+              placeholder="Ingrese el titulo del video ">
+          </div>
+          <div>
+            <input type="text" name="celular_empleado" value="{{celular_empleado}}" required
+              placeholder="Ingrese el titulo del video ">
+          </div>
+          <div>
+            <input type="text" name="telefono_empleado" value="{{telefono_empleado}}" required
+              placeholder="Ingrese el titulo del video ">
+          </div>
+          <div>
+            <input type="text" name="email_empleado" value="{{email_empleado}}" required
+              placeholder="Ingrese el titulo del video ">
+          </div>
+          <div>
+            <select id="AreaTra" name="area_empleado" value="{{area_empleado}}" required>
+              <option value="chofer">Chofer</option>
+              <option value="bodegero">Bodegero</option>
+              <option value="buses">Buses</option>
+            </select>
+          </div>
+          <div id="boton">
+            <button type="submit">Actualizar</button>
+          </div>
+</form>
+{{/each}}
+</div>
