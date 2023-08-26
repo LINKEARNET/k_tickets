@@ -1,83 +1,81 @@
-<link rel="stylesheet" href="/css/encomienda/agregar.css">
-<form action="/encomienda"method="post">
-<body>
-<head>
+<link rel="stylesheet" href="">
+<form action="/encomienda/agregar" method="POST">
+
+  <body>
+
+    <head>
       <div id="contendodrhe">
         <div>
-            <div class="navbar">
-                <div id="imagen">
-                    <img src="/img/logon.png"></img></div>
-                 <a href="/inicio2">Inicio</a>
-                    <a id="administrador" href="#">Administrador</a>
-                    <img id="img2" src="/img/perfil.png" alt="">
+          <div class="navbar">
+            <div id="imagen">
+              <img src="/img/logon.png"></img>
             </div>
-    </div>
-</head>
-  <div id="container">
-    <h2>Registro de Encomiendas</h2>
-    <u><h3>Remitente</h3></u>
-    
-    <form action="#" method="post">
+            <a href="/inicio2">Inicio</a>
+            <a id="administrador" href="#">Administrador</a>
+            <img id="img2" src="/img/perfil.png" alt="">
+          </div>
+        </div>
+    </head>
+    <div id="container">
+      <h2>Registro de Encomiendas</h2>
+      <u>
+        <h3>Remitente</h3>
+      </u>
+
       <label id="name" for="nombre">Nombres Completos:</label> <br>
-      <input type="text" id="nombre" name="nombre" required>
+      <input type="text" id="nombre" name="nombres_remitente" required>
 
       <label id="numeroce1" for="apellido"> Cedula:</label>
-      <input type="text" id="cedula1" name="cedula" required>
+      <input type="text" id="cedula1" name="cedula_remitente" required>
 
       <label id="numetelef" for="apellido"> Telefono:</label>
-      <input type="text" id="telefono" name="telefono" required>
+      <input type="text" id="telefono" name="telefono_encomienda_remitente" required>
 
-        <br> <br>
-      <label id="correoele" for="cedula">Correo Electronico:</label> <br>
-      <input type="text" id="correo" name="correo" required>
-       <br> <br>
-    </form> <br>
+      <label id="correoele" for="correo">Correo Electronico:</label> <br>
+      <input type="email" id="correo" name="email_remitente" required>
 
-    <u><h3>Destinatario</h3></u>
+      <u>
+        <h3>Datos de envio</h3>
+      </u>
+      
+      <label id="nameco" for="nomcoop"> Nombres Completos :</label> <br>
+      <input type="text" id="nomcoop" name="nombres_destinatario" required>
+
+      <label id="nameco" for="nomcoop">Numero de cedula :</label> <br>
+      <input type="text" id="nomcoop" name="cedula_destinatario" required>
+
+      <label id="telfC" for="telefonocelu">Direccion :</label>
+      <input type="text" id="telefonoC" name="direccion_destinatario" required>
 
 
-      <label id="name" for="nombre">Nombres Completos:</label> <br>
-      <input type="text" id="nombre" name="nombre" required>
+      <label id="numreg" for="registro">telefono encomienda destinatario:</label>
+      <input type="text" id="registro" name="telefono_destinatario" required>
+
+      <u>
+        <h3>Destinatario</h3>
+      </u>
+
+      <label id="name" for="nombre">Nombres Cooperativa:</label> <br>
+      <input type="text" id="nombre" name="nombres_cooperativa_detalle_encomienda" required>
 
       <label id="numeroce2" for="apellido">Cedula:</label>
-      <input type="text" id="cedula2" name="cedula" required>
+      <input type="text" id="cedula2" name="tamano_detalle_encomienda" required>
 
-      <label id="numetelef" for="apellido"> Telefono:</label>
-      <input type="text" id="telefono" name="telefono" required> <br>
+      <label id="numetelef" for="apellido">Fecha envio:</label>
+      <input type="datetime-local" id="fecha" name="fecha_envio_detalle_encomienda" required> <br>
 
-      <label id="calle" for="callepri">Calle Principal:</label> <br> <br>
-      <input type="text" id="callepri" name="callepri" required>
+      <label id="calle" for="callepri">numero registro detalle encomienda:</label> <br> <br>
+      <input type="text" id="callepri" name="numero_registro_detalle_encomienda" required>
 
-      <label id="calles" for="calles">Calle Secundaria:</label>
-      <input type="text" id="callese" name="callese" required>
 
-      <label id="casa" for="numcasa">Numero de Casa:</label> 
-      <input type="text" id="numcasa" name="numcasa" required>
-        <br> <br>
 
-      <u><h3>Datos de envio</h3></u>
-
-      <label id="nameco" for="nomcoop">Nombre Cooperativa:</label> <br>
-      <input type="text" id="nomcoop" name="nomcoop" required>
-
-      <label id="telfC" for="telefonocelu">Tamaño de encomienda:</label>
-      <input type="text" id="telefonoC" name="telefonocelu" required>
-
-      <label id="date" for="fecha">Fecha y hora de envio:</label> 
-      <input type="datetime-local" id="fecha" name="fecha" required> <br>
-
-      <label id="numreg" for="registro">Numero de registro de transporte:</label>
-      <input type="text" id="registro" name="registro" required>
-
-      <label id="peso" for="pesoe">Peso:</label>
-      <input type="text" id="pesoe" name="pesoe" required>
-        <br>
-        <br>
+      <br>
+      <br>
       <input id="cancel" type="submit" value="Cancelar">
       <input id="save" type="submit" value="Registrar">
-  </div>
-<!--Footer -->
-<footer id="footer" class="">
+    </div>
+    <!--Footer -->
+    <footer id="footer" class="">
       <div class="container">
         <div class="row text-left">
           <div id="contact">
@@ -87,9 +85,9 @@
             <img id="btntelef" src="/img/telef.png" alt="">
             <b><a>Whatsapp</a><br></b>
             <a>09 3456 7890</a><br> <br>
-            <b><a>Email</a></b><br> 
+            <b><a>Email</a></b><br>
             <a>hola@tickets.com</a> <br> <br>
-            <b><a>Call Center</a></b><br> 
+            <b><a>Call Center</a></b><br>
             <a>+59322 3456 7891</a><br> <br>
           </div>
           <div id="destin">
@@ -106,12 +104,14 @@
             <a href="">Inolvidables eventos</a> <br>
           </div>
           <div id="follow">
-           <b> <p>Síguenos</p></b>
-           <a href=""><img id="ig" src="/img/insta.png" alt=""></a>
-           <a href=""><img id="fb" src="/img/fb.png" alt=""></a>
+            <b>
+              <p>Síguenos</p>
+            </b>
+            <a href=""><img id="ig" src="/img/insta.png" alt=""></a>
+            <a href=""><img id="fb" src="/img/fb.png" alt=""></a>
           </div>
         </div>
       </div>
     </footer>
-</body>
-</from>
+  </body>
+</form>

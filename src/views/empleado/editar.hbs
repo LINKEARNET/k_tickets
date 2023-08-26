@@ -28,25 +28,30 @@
           </u>
 
           <div>
+            <label id="name" for="nombre">Nombre</label> <br>
             <input type="text" name="nombres_empleado" value="{{nombres_empleado}}" required
               placeholder="Ingrese el titulo del video ">
           </div>
           <div>
+            <label id="apelli" for="apellido">Apellido:</label>
             <input type="text" name="apellido_empleado" value="{{apellido_empleado}}" required
               placeholder="Ingrese el titulo del video ">
           </div>
           <div>
+            <label id="numce" for="cedula">Número de Cédula:</label> <br>
             <input type="text" name="cedula_empleado" value="{{cedula_empleado}}" required
               placeholder="Ingrese el titulo del video ">
 
           </div>
           <div>
+            <label id="date" for="fecha_nacimiento">Fecha de Nacimiento:</label> 
             <input type="date" name="fecha_nacimiento_empleado" value="{{fecha_nacimiento_empleado}}" required
               placeholder="Ingrese el titulo del video ">
 
           </div>
 
           <div>
+            <label id="sexo" for="sexo">Sexo:</label>
             <select id="sexoSele" name="sexo_empleado" value="{{sexo_empleado}}" required>
               <option value="masculino">Masculino</option>
               <option value="femenino">Femenino</option>
@@ -55,27 +60,33 @@
           </div>
 
           <div>
+             <label id="calleP" for="nombre">Calle principal</label>
             <input type="text" name="calle_principal_empleado" value="{{calle_principal_empleado}}" required
               placeholder="Ingrese el titulo del video ">
 
           </div>
           <div>
+            <label id="calleSe" for="nombre">Calle secundaria</label>
             <input type="text" name="calle_secundaria" value="{{calle_secundaria}}" required
               placeholder="Ingrese el titulo del video ">
           </div>
           <div>
+            <label id="telfC" for="telefonocelu">Telefono Celular</label> <br>
             <input type="text" name="celular_empleado" value="{{celular_empleado}}" required
               placeholder="Ingrese el titulo del video ">
           </div>
           <div>
+            <label id="teleCo" for="telefonoconv">Telefono Convencional</label>
             <input type="text" name="telefono_empleado" value="{{telefono_empleado}}" required
               placeholder="Ingrese el titulo del video ">
           </div>
           <div>
+            <label id="email" for="emailCorreo">Email@</label> 
             <input type="text" name="email_empleado" value="{{email_empleado}}" required
               placeholder="Ingrese el titulo del video ">
           </div>
           <div>
+            <label id="area" for="Area">Area:</label> <br> <br>
             <select id="AreaTra" name="area_empleado" value="{{area_empleado}}" required>
               <option value="chofer">Chofer</option>
               <option value="bodegero">Bodegero</option>
@@ -85,6 +96,8 @@
           <div id="boton">
             <button type="submit">Actualizar</button>
           </div>
+          <div class="cancelar">
+          <button type="submit">Cancelar</button>
+        </div>
 </form>
 {{/each}}
-</div>

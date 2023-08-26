@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="/src/public/css/Encomienda/listar.css">
-<form action="detalle_encimienda/lista/1" method="get"></form>
+<form action="encomienda/listar/" method="get"></form>
 <head>
     <div id="contendodrhe">
         <div>
@@ -19,83 +19,56 @@
         <div id="tarjeta">
             <u><h2>Remitente</h2></u>
             <div>
-                <p>{{id_encomienda_remitente}}</p>
+                <p>{{nombres_remitente}}</p>
             </div>
             <div>
-                <p>{{nombres_encomienda_remitente}}</p>
-            </div>
-            <div>
-                <p>{{cedula_encomienda_remitente}}</p>
+                <p>{{cedula_remitente}}</p>
             </div>
             <div>
                 <p>{{telefono_encomienda_remitente}}</p>
             </div>
             <div>
-                <p>{{email_encomienda_remitente}}</p>
+                <p>{{email_remitente}}</p>
             </div>
             <div>
-                <div>
-                    <a href="/encomienda_remitente/editar/{{id_encomienda_remitente}}"><button type="button">Editar</button></a>
-                </div></p>
-                <div>
-                    <a href="/encomienda_remitente/eliminar/{{id_encomienda_remitente}}"><button type="button" style="background-color: red;">Eliminar</button></a>
-                </div></p>
-            </div>
-        </div>
-
+                
         <div id="tarjeta">
             <u><h2>Destinatario</h2></u>
-            <div>
-                <p>{{id_encomienda_remitente}}</p>
+             <div>
+                <p>{{nombres_destinatario}}</p>
             </div>
             <div>
-                <p>{{nombres_encomienda_remitente}}</p>
+                <p>{{cedula_destinatario}}</p>
             </div>
             <div>
-                <p>{{cedula_encomienda_remitente}}</p>
+                <p>{{direccion_destinatario}}</p>
             </div>
             <div>
-                <p>{{telefono_encomienda_remitente}}</p>
+                <p>{{telefono_destinatario}}</p>
             </div>
-            <div>
-                <p>{{email_encomienda_remitente}}</p>
-            </div>
-            <div>
-                <div>
-                    <a href="/encomienda_remitente/editar/{{id_encomienda_remitente}}"><button type="button">Editar</button></a>
-                </div></p>
-                <div>
-                    <a href="/encomienda_remitente/eliminar/{{id_encomienda_remitente}}"><button type="button" style="background-color: red;">Eliminar</button></a>
-                </div></p>
-            </div>
-        </div>
-
-
-        <div id="tarjeta">
+             <div id="tarjeta">
+            
             <u><h2>Datos de envio</h2></u>
+
             <div>
-                <p>{{id_encomienda_remitente}}</p>
+                <p>{{nombres_cooperativa_detalle_encomienda}}</p>
             </div>
             <div>
-                <p>{{nombres_encomienda_remitente}}</p>
+                <p>{{tamano_detalle_encomienda}}</p>
             </div>
             <div>
-                <p>{{cedula_encomienda_remitente}}</p>
+                <p>{{fecha_envio_detalle_encomienda}}</p>
             </div>
             <div>
-                <p>{{telefono_encomienda_remitente}}</p>
+                <p>{{numero_registro_detalle_encomienda}}</p>
+            </div>            
             </div>
-            <div>
-                <p>{{email_encomienda_remitente}}</p>
-            </div>
-            <div>
                 <div>
-                    <a href="/encomienda_remitente/editar/{{id_encomienda_remitente}}"><button type="button">Editar</button></a>
-                </div></p>
+                    <a href="/encomienda/editar/{{id_encomienda_remitente}}"><button type="button">Editar</button></a>
+                </div>
                 <div>
-                    <a href="/encomienda_remitente/eliminar/{{id_encomienda_remitente}}"><button type="button" style="background-color: red;">Eliminar</button></a>
-                </div></p>
-            </div>
+                    <a href="/encomienda/eliminar/{{id_encomienda_remitente}}"><button type="button" style="background-color: red;">Eliminar</button></a>
+                </div>
         </div>
         {{/each}}
     </div>

@@ -8,32 +8,27 @@ encomienda_remitenteCtl.mostrar = (req, res) => {
 
 //mandar
 encomienda_remitenteCtl.mandar = async (req, res) => {
-    const id = req.user.id_terminal
-    const { nombres_encomienda_remitente,cedula_encomienda_remitente,telefono_encomienda_remitente,email_encomienda_remitente,
-        nombres_cooperativa_detalle_encomienda,tamano_detalle_encomienda,fecha_envio_detalle_encomienda,numero_registro_detalle_encomienda,peso_detalle_encomienda,
-        nombres_encomienda_destinatario,cedula_encomienda_destinatario,calle_principal_encomienda_destinatario,calle_secundaria,telefono_encomienda_destinatario,numero_casa_encomienda_destinatario} = req.body
+    const id = req.id_encomienda_remitente
+    const { nombres_remitente,cedula_remitente,telefono_encomienda_remitente, email_remitente,nombres_destinatario,
+        cedula_destinatario,direccion_destinatario,telefono_destinatario,nombres_cooperativa_detalle_encomienda, tamano_detalle_encomienda,fecha_envio_detalle_encomienda, numero_registro_detalle_encomienda} = req.body
     const nuevoEnvio = {
-        nombres_encomienda_remitente,
-        cedula_encomienda_remitente,
+        nombres_remitente,
+        cedula_remitente,
         telefono_encomienda_remitente,
-        email_encomienda_remitente,
-        //detalle encomienda 
+        email_remitente,
+        nombres_destinatario,
+        cedula_destinatario,
+        direccion_destinatario,
+        telefono_destinatario,
         nombres_cooperativa_detalle_encomienda,
         tamano_detalle_encomienda,
         fecha_envio_detalle_encomienda,
-        numero_registro_detalle_encomienda,
-        peso_detalle_encomienda,
-        //encomienda destinatario
-        nombres_encomienda_destinatario,
-        cedula_encomienda_destinatario,
-        calle_principal_encomienda_destinatario,
-        calle_secundaria,
-       telefono_encomienda_destinatario,
-       numero_casa_encomienda_destinatario
+        numero_registro_detalle_encomienda
+       
     }
     await orm.encomienda_remitente.create(nuevoEnvio)
     req.flash('success', 'Guardado exitosamente')
-    res.redirect('/encomienda/listar/' + id)
+    res.redirect('/encomienda/listar/')
 }
 
 encomienda_remitenteCtl.listar = async (req, res) => {
@@ -49,46 +44,38 @@ encomienda_remitenteCtl.traer = async (req, res) => {
 }
 
 encomienda_remitenteCtl.actualizar = async (req, res) => {
-    const id = req.user.id_terminal
-    const ids = req.params.id
-    const {nombres_encomienda_remitente,cedula_encomienda_remitente,telefono_encomienda_remitente,email_encomienda_remitente,
-        nombres_cooperativa_detalle_encomienda,tamano_detalle_encomienda,fecha_envio_detalle_encomienda,numero_registro_detalle_encomienda,peso_detalle_encomienda,
-        nombres_encomienda_destinatario,cedula_encomienda_destinatario,calle_principal_encomienda_destinatario,calle_secundaria,telefono_encomienda_destinatario,numero_casa_encomienda_destinatario} = req.body
+    const ids=req.params.id
+    const {nombres_remitente,cedula_remitente,telefono_encomienda_remitente, email_remitente,nombres_destinatario,cedula_destinatario,direccion_destinatario,telefono_destinatario,nombres_cooperativa_detalle_encomienda, tamano_detalle_encomienda,fecha_envio_detalle_encomienda, numero_registro_detalle_encomienda} = req.body
     const nuevoEnvio = {
-        nombres_encomienda_remitente,
-        cedula_encomienda_remitente,
+        nombres_remitente,
+        cedula_remitente,
         telefono_encomienda_remitente,
-        email_encomienda_remitente,
-         //detalle encomienda 
-         nombres_cooperativa_detalle_encomienda,
-         tamano_detalle_encomienda,
-         fecha_envio_detalle_encomienda,
-         numero_registro_detalle_encomienda,
-         peso_detalle_encomienda,
-         //encomienda destinatario
-         nombres_encomienda_destinatario,
-         cedula_encomienda_destinatario,
-         calle_principal_encomienda_destinatario,
-         calle_secundaria,
-        telefono_encomienda_destinatario,
-        numero_casa_encomienda_destinatario
+        email_remitente,
+        nombres_destinatario,
+        cedula_destinatario,
+        direccion_destinatario,
+        telefono_destinatario,
+        nombres_cooperativa_detalle_encomienda,
+        tamano_detalle_encomienda,
+        fecha_envio_detalle_encomienda,
+        numero_registro_detalle_encomienda
+        
     }
     await orm.encomienda_remitente.findOne({ where: { id_encomienda_remitente: ids } })
         .then(actualizar => {
             actualizar.update(nuevoEnvio)
         })
     req.flash('success', 'Actualizado exitosamente')
-    res.redirect('/encomienda/listar/' + id);
+    res.redirect('/encomienda/listar/');
 }
+
 encomienda_remitenteCtl.eliminar = async (req, res) => {
     const ids = req.params.id
-    const id = req.user.id_usuario
     await orm.encomienda_remitente.destroy({ where: { id_encomienda_remitente: ids } })
         .then(() => {
             req.flash('success', 'Eliminado exitosamente')
-            res.redirect('/encomienda/listar/' + id);
+            res.redirect('/encomienda/listar/');
         })
 }
-
 
 module.exports = encomienda_remitenteCtl

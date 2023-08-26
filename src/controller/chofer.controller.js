@@ -8,18 +8,18 @@ choferCtl.mostrar = (req, res) => {
 
 //mandar
 choferCtl.mandar = async (req, res) => {
-    const { cedula_chofer, nombre_chofer, apellido_chofer, sexo_chofer, estado_civil_chofer, fecha_nacimiento_chofer, direccion_chofer, email_chofer, celular_chofer, tipo_licencia,fecha_emision_licencia,fecha_vencimiento_licencia  } = req.body
+    const id =req.id_chofer
+    const { cedula_chofer, nombres_chofer, apellidos_chofer, sexo_chofer, estado_civil_chofer, fecha_nacimiento_chofer, direccion_chofer, email_chofer, celular_chofer, tipo_licencia,fecha_emision_licencia,fecha_vencimiento_licencia  } = req.body
     const nuevoEnvio = {
         cedula_chofer, 
-        nombre_chofer, 
-        apellido_chofer, 
+        nombres_chofer, 
+        apellidos_chofer, 
         sexo_chofer, 
         estado_civil_chofer, 
         fecha_nacimiento_chofer, 
         direccion_chofer, 
         email_chofer, 
         celular_chofer,
-        //licencia
         tipo_licencia,
         fecha_emision_licencia,
         fecha_vencimiento_licencia
@@ -42,25 +42,23 @@ choferCtl.traer = async (req, res) => {
 }
 
 choferCtl.actualizar = async (req, res) => {
-    const id = req.user.id_terminal
     const ids = req.params.id
-    const { cedula_chofer, nombre_chofer, apellido_chofer, sexo_chofer, estado_civil_chofer, fecha_nacimiento_chofer, direccion_chofer, email_chofer, celular_chofer,tipo_licencia,fecha_emision_licencia,fecha_vencimiento_licencia  } = req.body
+    const { cedula_chofer, nombres_chofer, apellidos_chofer, sexo_chofer, estado_civil_chofer, fecha_nacimiento_chofer, direccion_chofer, email_chofer, celular_chofer,tipo_licencia,fecha_emision_licencia,fecha_vencimiento_licencia  } = req.body
     const nuevoEnvio = {
         cedula_chofer, 
-        nombre_chofer, 
-        apellido_chofer, 
+        nombres_chofer, 
+        apellidos_chofer, 
         sexo_chofer, 
         estado_civil_chofer, 
         fecha_nacimiento_chofer, 
         direccion_chofer, 
         email_chofer, 
         celular_chofer,
-        //licencia
         tipo_licencia,
         fecha_emision_licencia,
         fecha_vencimiento_licencia
     }
-    await orm.chofer.findOne({ where: { id_chofer: id } })
+    await orm.chofer.findOne({ where: { id_chofer: ids } })
         .then(actualizar => {
             actualizar.update(nuevoEnvio)
         })
@@ -69,11 +67,10 @@ choferCtl.actualizar = async (req, res) => {
 }
 choferCtl.eliminar = async (req, res) => {
     const ids = req.params.id
-    const id = req.user.id_usuario
-    await orm.chofer.destroy({ where: { id_chofer: id } })
+    await orm.chofer.destroy({ where: { id_chofer: ids } })
         .then(() => {
             req.flash('success', 'Eliminado exitosamente')
-            res.redirect('/chofer/listar/' + id);
+            res.redirect('/chofer/listar/');
         })
 }
 
