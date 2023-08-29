@@ -1,53 +1,57 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
-  #img2{
-    position: relative;
-    width: 67px;
-    height: 63px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    right: 60px;
-  }
+  margin: 0px;
+  padding: 0px;
+  background-color: #f4f4f4;
+  background-image:  radial-gradient(#040a84 0.75px, transparent 0.75px), radial-gradient(#040a84 0.75px, #e5e5f7 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0,15px 15px;
+}
+#img2{
+  position: relative;
+  width: 67px;
+  height: 63px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  right: -10px;
+}
 #contenedorhe{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    max-height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+#contenedor{
+  position: relative;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.navbar {
+    background-color: #1D202B;
+    overflow: hidden;
   }
-  #contenedor{
-    position: relative;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    max-height: 100%;
+
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 10px;
+    text-decoration: none;
   }
-  .navbar {
-      background-color: #1D202B;
-      overflow: hidden;
-    }
-  
-    .navbar a {
-      float: left;
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-  
-    .navbar a:hover {
-      background-color: #ddd;
-      color: black;
-    }
+
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
   #imagen{
     width: 100%;
     height: 100%;
@@ -61,250 +65,368 @@ body {
     background-size: cover;
     background-attachment: fixed;
   }
-  #boton{
-    width: 160px;
-    height: 48px;
-    background-color: #F28705;
-    border: none;
-    color: white;
-    padding: 5px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    border-radius: 30px;
-    right: 100px;
-    position: absolute;
-  }
-  #inicio{
-    position: absolute;
-    left: 650px;
-  }
-  
+
+#boton{
+  width: 160px;
+  height: 48px;
+  background-color: #F28705;
+  border: none;
+  color: white;
+  padding: 5px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 30px;
+  right: 100px;
+  position: relative;
+}
+#inicio{
+  position: absolute;
+  left: 900px;
+}
+#listar{
+  position: absolute;
+  left: 985px;
+}
+
+#administrador{
+  position: absolute;
+  left: 1065px;
+}
+
 #container{
-    max-width: 2000px;
-    margin: 50px 110px;
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgb(0, 0, 0);
-    background-image: url(/img/empleadosBack.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment:scroll;
+  position: relative;
+  left: 35px;
+  width: 1000px;
+  max-width: 1000px;
+  height: 880px;
+  margin: 75px 160px;
+  padding: 15px;
+  box-shadow: 0px 0px 20px#05198b;
+  background-color:#b3b3b3;
+  color: #000000;
+  border-radius: 100px;
+}
+.fondo{
+opacity: 0.6;
+ width: 1000px;
+ height: 882px;
+ position: relative;
+ left: -15px;
+ top: -62px;
+ border-radius: 100px;
+
 }
 #container h2{
-    position: relative;
-    text-align: center;
+position: relative;
+text-align: center;
+top: -60px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#container h3{
+position: relative;
+text-align: left;
+top: -900px;
+
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color: #000000;
 }
 #name{
-    font-family: Arial, Helvetica, sans-serif;
+font-family:Georgia, 'Times New Roman', Times, serif;
+position: relative;
+top: -895px;
+left: 25px;
+color: #000000;
 }
 #nombre{
-    width: 250px;
-    height: 30px;
-    border-radius: 5px 2px;
-    padding: 0px, 31px, 0px, 7px;
-    gap: 10px;
+position: relative;
+right: 0px;
+top: -890px;
+width: 265px;
+height: 30px;
+border-radius: 5px;
+padding: 0px, 31px, 0px, 7px;
+border-color: #000000;
+border-width: 2px;
+border-radius: 30px;
 }
 #apelli{
-    position: relative;
-    left: 70px;
-    top: -35px;
-    font-family: Arial, Helvetica, sans-serif;
+font-family:Georgia, 'Times New Roman', Times, serif;
+position: relative;
+top: -935px;
+left: 75px;
+color: #000000;
 }
 #apellido{
-    width: 250px;
-    height: 30px;
-    border-radius: 5px 2px;
-    padding: 0px, 31px, 0px, 7px;
-    gap: 10px;
+position: relative;
+right: 25px;
+top: -890px;
+width: 265px;
+height: 30px;
+border-radius: 5px;
+padding: 0px, 31px, 0px, 7px;
+border-color: #000000;
+border-width: 2px;
+border-radius: 30px;
 }
 #date{
-    position: relative;
-    left: 80px;
-    top: -35px;
-    font-family: Arial, Helvetica, sans-serif;
+font-family:Georgia, 'Times New Roman', Times, serif;
+position: relative;
+top: -935px;
+left: 75px;
+color: #000000;
 }
 #fecha_nacimiento{
-    position: relative;
-    right: 80px;
-    width: 225px;
-    height: 30px;
-    border-radius: 5px 2px;
+position: relative;
+left: 650px;
+top: -926px;
+width: 265px;
+height: 30px;
+border-radius: 5px;
+padding: 0px, 31px, 0px, 7px;
+border-color: #000000;
+border-width: 2px;
+border-radius: 30px;
 }
 #numce{
-    position: relative;
-    left: 0px;
-    top: -6px;
-    font-family: Arial, Helvetica, sans-serif;
+font-family:Georgia, 'Times New Roman', Times, serif;
+position: relative;
+top: -935px;
+left: 23px;
+color: #000000;
 }
 #cedula{
-    position: relative;
-    right: 0px;
-    width: 310px;
-    height: 30px;
-    border-radius: 5px 2px;
+position: relative;
+right: 0px;
+top: -926px;
+width: 265px;
+height: 30px;
+border-radius: 5px;
+padding: 0px, 31px, 0px, 7px;
+border-color: #000000;
+border-width: 2px;
+border-radius: 30px;;
 }
 #sexo{
-    position: relative;
-    left: 68px;
-    top: -45px;
-    font-family: Arial, Helvetica, sans-serif;
+font-family:Georgia, 'Times New Roman', Times, serif;
+position: relative;
+top: -972px;
+left: 75px;
+color: #000000;
 }
 #sexoSele{
-    position: relative;
-    right: -20px;
-    width: 250px;
-    height: 30px;
-    border-radius: 5px 2px;
+position: relative;
+right: 0px;
+top: -926px;
+width: 265px;
+height: 30px;
+border-radius: 5px;
+padding: 0px, 31px, 0px, 7px;
+border-color: #000000;
+border-width: 2px;
+border-radius: 30px;
 }
 
 #canton{
-  position: relative;
-  left: 0px;
-  top: -35px;
-  font-family: Arial, Helvetica, sans-serif;
+font-family:Georgia, 'Times New Roman', Times, serif;
+position: relative;
+top: 35px;
+left: 0px;
+color: #000000;
 }
 #cantonIn{
-  position: relative;
-  left: -55px;
-  width: 250px;
-  height: 30px;
-  border-radius: 5px 2px;
-  padding: 0px, 31px, 0px, 7px;
-  gap: 10px;
+position: relative;
+right: 175px;
+top: -590px;
+width: 265px;
+height: 30px;
+border-radius: 5px;
+padding: 0px, 31px, 0px, 7px;
+border-color: #000000;
+border-width: 2px;
+border-radius: 30px;
 }
 #pronvin{
-  position: relative;
-  left: 70px;
-  top: -35px;
-  font-family: Arial, Helvetica, sans-serif;
+font-family:Georgia, 'Times New Roman', Times, serif;
+position: relative;
+top: -635px;
+left: 75px;
+color: #000000;
 }
 #provincia{
-  width: 250px;
-  height: 30px;
-  border-radius: 5px 2px;
-  padding: 0px, 31px, 0px, 7px;
-  gap: 10px;
+position: relative;
+right: 175px;
+top: -590px;
+width: 265px;
+height: 30px;
+border-radius: 5px;
+padding: 0px, 31px, 0px, 7px;
+border-color: #000000;
+border-width: 2px;
+border-radius: 30px;
 }
 #sect{
-    position: relative;
-    left: 65px;
-    top: -35px;
-    font-family: Arial, Helvetica, sans-serif;
+font-family:Georgia, 'Times New Roman', Times, serif;
+position: relative;
+top: -635px;
+left: 75px;
+color: #000000;
 }
 #sector{
-    top: 0px;
-    position: relative;
-    left: 0px;
-    right: 0px;
-    width: 250px;
-    height: 30px;
-    border-radius: 5px 2px;
+position: relative;
+right: 175px;
+top: -590px;
+width: 265px;
+height: 30px;
+border-radius: 5px;
+padding: 0px, 31px, 0px, 7px;
+border-color: #000000;
+border-width: 2px;
+border-radius: 30px;
 }
 #calleSe{
-    position: relative;
-    left: 0px;
-    top: -6px;
-    font-family: Arial, Helvetica, sans-serif;
+font-family:Georgia, 'Times New Roman', Times, serif;
+position: relative;
+top: -895px;
+left: 26px;
+color: #000000;
 }
 #callesecu{
-    position: relative;
-    right: 0px;
-    width: 310px;
-    height: 30px;
-    border-radius: 5px 2px;
+position: relative;
+right: 0px;
+top: -890px;
+width: 265px;
+height: 30px;
+border-radius: 5px;
+padding: 0px, 31px, 0px, 7px;
+border-color: #000000;
+border-width: 2px;
+border-radius: 30px;
 }
 #calleP{
-    position: relative;
-    left: 70px;
-    top: -40px;
-    font-family: Arial, Helvetica, sans-serif;
+font-family:Georgia, 'Times New Roman', Times, serif;
+position: relative;
+top: -925px;
+left: 75px;
+color: #000000;
 }
 #callepri{
-    position: relative;
-    right: 35px;
-    width: 310px;
-    height: 30px;
-    border-radius: 5px 2px;
+position: relative;
+right: 65px;
+top: -890px;
+width: 265px;
+height: 30px;
+border-radius: 5px;
+padding: 0px, 31px, 0px, 7px;
+border-color: #000000;
+border-width: 2px;
+border-radius: 30px;
 }
 
 #telfC{
-    position: relative;
-    left: 0px;
-    top: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+font-family:Georgia, 'Times New Roman', Times, serif;
+position: relative;
+top: -895px;
+left: 23px;
+color: #000000;
 }
 #telefonoC{
-    top: 9px;
-    position: relative;
-    right: 0px;
-    width: 310px;
-    height: 30px;
-    border-radius: 5px 2px;
+position: relative;
+right: 0px;
+top: -890px;
+width: 265px;
+height: 30px;
+border-radius: 5px;
+padding: 0px, 31px, 0px, 7px;
+border-color: #000000;
+border-width: 2px;
+border-radius: 30px;
 }
 #teleCo{
-    position: relative;
-    left: 70px;
-    top: -25px;
-    font-family: Arial, Helvetica, sans-serif;
+font-family:Georgia, 'Times New Roman', Times, serif;
+position: relative;
+top: -930px;
+left: 75px;
+color: #000000;
 }
 #telefonoCo{
-    top: 9px;
-    position: relative;
-    right: 95px;
-    width: 310px;
-    height: 30px;
-    border-radius: 5px 2px;
+position: relative;
+right: 125px;
+top: -890px;
+width: 265px;
+height: 30px;
+border-radius: 5px;
+padding: 0px, 31px, 0px, 7px;
+border-color: #000000;
+border-width: 2px;
+border-radius: 30px;
 }
 #email{
-    position: relative;
-    left: -20px;
-    top: -20px;
-    font-family: Arial, Helvetica, sans-serif;
+font-family:Georgia, 'Times New Roman', Times, serif;
+position: relative;
+top: -930px;
+left: 0px;
+color: #000000;
 }
 #Email{
-    top: -27px;
-    position: relative;
-    right: -730px;
-    width: 265px;
-    height: 30px;
-    border-radius: 5px 2px;
+position: relative;
+left: 650px;
+top: -926px;
+width: 265px;
+height: 30px;
+border-radius: 5px;
+padding: 0px, 31px, 0px, 7px;
+border-color: #000000;
+border-width: 2px;
+border-radius: 30px;
 }
 #area{
-    position: relative;
-    left: -260px;
-    top: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+font-family:Georgia, 'Times New Roman', Times, serif;
+position: relative;
+top: -885px;
+right: 245px;
+color: #000000;
 }
 #AreaTra{
-    position: relative;
-    right: 0px;
-    width: 310px;
-    height: 30px;
-    border-radius: 5px 2px;
+position: relative;
+right: 0px;
+top: -900px;
+width: 265px;
+height: 30px;
+border-radius: 5px;
+padding: 0px, 31px, 0px, 7px;
+border-color: #000000;
+border-width: 2px;
+border-radius: 30px;
 }
-#cancel{
-    position: relative;
-    left: 1000px;
-    width: 100px;
-    height: 50px;
-    border-radius: 20px;
-    background-color: #FF0D0D;
-    color: white;
+button {
+background-color: #4CAF50;
+color: white;
+border: none;
+padding: 10px 20px;
+border-radius: 15px;
+float: left;
+margin-right: 10px;
+cursor: pointer;
+margin-bottom: 10px;
+position: relative;
+left: 380px;
+top: -825px;
+border-top-left-radius: 0cm;
 }
-#save{
-    position: relative;
-    left: 780px;
-    width: 100px;
-    height: 50px;
-    border-radius: 20px;
-    background-color: #0084FF;
-    color: white;
+
+.registrarse button {
+background-color: #2579e6;
+}
+
+
+.cancelar button {
+background-color: #ec0d0d;
 }
 .container{
-  max-width:1040px;
-  margin: 0 auto 8px auto;
+max-width:1040px;
+margin: 0 auto 8px auto;
 }
 #footer{
   background-color: #1D202A;

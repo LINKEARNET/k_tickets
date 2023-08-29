@@ -1,10 +1,12 @@
 const express = require("express");
+const { isLoggedIn, isNotLoggedIn } = require('../lib/auth');
+
 const router = express.Router();
 const { mostrar, mandar} = require("../controller/ciudad.controller");
 
 
-router.get('/agregar',mostrar);
-router.post('/agregar/:id',mandar);
+router.get('/agregar',isLoggedIn,mostrar);
+router.post('/agregar/:id',isLoggedIn,mandar);
 
 
 module.exports = router;

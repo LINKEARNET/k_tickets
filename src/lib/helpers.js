@@ -1,10 +1,18 @@
-const CryptoJS = require('crypto-js')
+const bcrypt = require('bcryptjs');
+const helpers = {};
 
-const helpers = {}
+helpers.encryptPassword = async (password) => {
+  const salt = await bcrypt.genSalt(20);
+  const hash = await bcrypt.hash(password, salt);
+  return hash;
+};
 
-helpers.encryptPassword = async (password) =>{
-    const hash = CryptoJS.AES.encrypt(password, 'secret').toString();
-    return hash;
-}
+helpers.matchPassword = async (password, savedPassword) => {
+  try {
+     return await bcrypt.compare(password, savedPassword);
+  } catch (e) {
+    console.log(e)
+  }
+};
 
 module.exports = helpers;
