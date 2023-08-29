@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="/css/transporte/agregar.css">
-<from action="/"method="post">
+<link rel="stylesheet" href="/css/buses/listar.css">
+<form action="buses/listar/"method="get"></form>
 <body>
 <head>
     <div id="contendodrhe">
@@ -11,33 +11,31 @@
                     <a id="administrador" href="#">Administrador</a>
             </div>
             <div class="contenedorimagenes">
-          <img class="icono" src="/img/empleados.png" alt="">
+          <img class="icono" src="/img/.png" alt="">
       </div>
     </div>
 </head>
 <h1>Buses</h1>
 <div id="contenedor">
-    <h2>Nombre de la Cooperativa</h2>
-    <h2 class="ruta">Ruta</h2>
-    <h2 class="horarios"> Horarios</h2>
-    <h2 class="encargado">Encargado</h2>
-
+    
     <div class="row">
         {{#each lista}}
-        <div id="cooperativa">
+        <div id="tarjeta">
+            <u><h2>Datos del transporte</h2></u>
             <div>
-                <p>{{id_cooperativa}}</p>
+                <p>{{placa_bus}}</p>
             </div>
             <div>
-                <p>{{nombres_cooperativa}}</p>
+                <p>{{nombres_cooperativa_bus}}</p>
             </div>
             <div>
+                <p>{{capacidad_bus}}</p>
             </div>
-        </div>
-
-        <div id="ruta">
             <div>
-                <p>{{id_ruta}}</p>
+                <p>{{conductor_encargado_bus}}</p>
+            </div>
+            <div>
+                <p>{{nombre_copiloto_bus}}</p>
             </div>
             <div>
                 <p>{{partida_ruta}}</p>
@@ -46,35 +44,17 @@
                 <p>{{destina_ruta}}</p>
             </div>
             <div>
-            </div>
-        </div>
-
-        <div id="horario">
-            <div>
-                <p>{{id_cooperativa}}</p>
-            </div>
-            <div>
-                <p>{{horario_cooperativa}}</p>
-            </div>
-        <div id="nombres">
-                <p>{{nombres_chofer}}</p>
-            </div>
-            <div>
-            <div class="button">
                 <div>
-                    <a href="/licencia/editar/{{id_licencia}}"><button type="button">Editar</button></a>
+                    <a href="/buses/editar/{{id_bus}}"><button type="button">Editar</button></a>
                 </div></p>
                 <div>
-                    <a href="/licencia/eliminar/{{id_licencia}}"><button type="button" style="background-color: red;">Eliminar</button></a>
+                    <a href="/buses/eliminar/{{id_bus}}"><button type="button" style="background-color: red;">Eliminar</button></a>
                 </div></p>
-            </div>
             </div>
         </div>
         {{/each}}
     </div>
 </div>
-
-
 
 <footer id="footer" class="">
       <div class="container">
@@ -106,12 +86,11 @@
           </div>
           <div id="follow">
            <b> <p>Síguenos</p></b>
-           <a href=""><img id="ig" src="/img/instagram.png" alt=""></a>
-           <a href=""><img id="fb" src="/img/facebook.png" alt=""></a>
+           <a href=""><img id="ig" src="/img/insta.png" alt=""></a>
+           <a href=""><img id="fb" src="/img/fb.png" alt=""></a>
           </div>
         </div>
       </div>
     </footer>
 </body>
-</from>
 

@@ -10,7 +10,12 @@ const cooperativa = (sequelize, type) => {
         numero_transporte_cooperativa: type.STRING,
         horario_cooperativa: type.STRING,
         contactos_cooperativa: type.STRING,
-        email_cooperativa: type.STRING,
+        nombres_encargado: type.STRING,
+        cedula_encargado: type.STRING,
+        sexo_encargado: type.STRING,
+       celular_encargado: type.STRING,
+       telefono_encargado: type.STRING,
+       email_encargado: type.STRING,
     
 
         crearCooperativa: {

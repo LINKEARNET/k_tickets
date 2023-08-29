@@ -8,17 +8,20 @@ busCtl.mostrar = (req, res) => {
 
 //mandar
 busCtl.mandar = async (req, res) => {
-    const id = req.user.id_terminal
-    const { nombre_bus, capacidas_bus, horario_bus, placa_bus } = req.body
+    const id =req.id_bus  //ojo
+    const { conductor_encargado_bus,capacidad_bus,placa_bus,nombres_cooperativa_bus,nombre_copiloto_bus,partida_ruta,destina_ruta } = req.body
     const nuevoEnvio = {
-        nombre_bus,
-        capacidas_bus,
-        horario_bus,
-        placa_bus
+        conductor_encargado_bus,
+        capacidad_bus,
+        placa_bus,
+        nombres_cooperativa_bus,
+        nombre_copiloto_bus,
+        partida_ruta,
+        destina_ruta
     }
     await orm.bus.create(nuevoEnvio)
     req.flash('success', 'Guardado exitosamente')
-    res.redirect('/buses/listar/'+ id)
+    res.redirect('/buses/listar/')
 }
 
 busCtl.listar = async (req, res) => {
@@ -34,16 +37,18 @@ busCtl.traer = async (req, res) => {
 }
 
 busCtl.actualizar = async (req, res) => {
-    const id = req.user.id_terminal
     const ids = req.params.id
-    const { nombre_bus, capacidas_bus, horario_bus, placa_bus } = req.body
+    const { conductor_encargado_bus,capacidad_bus,placa_bus,nombres_cooperativa_bus,nombre_copiloto_bus,partida_ruta,destina_ruta } = req.body
     const nuevoEnvio = {
-        nombre_bus,
-        capacidas_bus,
-        horario_bus,
-        placa_bus
+        conductor_encargado_bus,
+        capacidad_bus,
+        placa_bus,
+        nombres_cooperativa_bus,
+        nombre_copiloto_bus,
+        partida_ruta,
+        destina_ruta
     }
-    await orm.bus.findOne({ where: { id_bus: id } })
+    await orm.bus.findOne({ where: { id_bus: ids } })
         .then(actualizar => {
             actualizar.update(nuevoEnvio)
         })
@@ -52,11 +57,10 @@ busCtl.actualizar = async (req, res) => {
 }
 busCtl.eliminar = async (req, res) => {
     const ids = req.params.id
-    const id = req.user.id_usuario
-    await orm.bus.destroy({ where: { id_bus: id } })
+    await orm.bus.destroy({ where: { id_bus: ids } })
         .then(() => {
             req.flash('success', 'Eliminado exitosamente')
-            res.redirect('/buses/listar/' + id);
+            res.redirect('/buses/listar/');
         })
 }
 

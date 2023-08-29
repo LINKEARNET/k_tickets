@@ -1,6 +1,6 @@
-<link rel="stylesheet" href="/src/public/css/editar/listar.css">
+<link rel="stylesheet" href="/src/public/css/cooperativa/editar.css">
 {{#each lista}}
-<form action="/empleado/editar/{{id_empleado}}" method="post">
+<form action="/cooperativa/editar/{{id_cooperativa}}" method="post">
 
   <head>
 
@@ -17,51 +17,65 @@
           </div>
         </div>
     </head>
-    <h1>Registro de Cooperativas</h1>
-    <div id="contenedor">
+    <h1>Actualización de Cooperativas</h1>
+    <div id="container">
+      <h2>Registro de Cooperativas</h2>
+      <u>
+        <h3>Datos de la cooperativa</h3>
+      </u>
 
-      <div class="row">
-        
-        <div id="tarjeta">
-          <u>
-            <h2>Datos De la Cooperativa</h2>
-          </u>
+      <label id="nameCoop" for="nombre">Nombre de la cooperativa</label> <br>
+      <input type="text" id="nombrecoopera" name="nombres_cooperativa" value="{{nombres_cooperativa}}" required>
 
-          <div>
-            <input type="text" name="nombres_cooperativa" value="{{nombres_cooperativa}}" required
-              placeholder="Ingrese el titulo del video ">
-          </div>
-          <div>
-            <input type="text" name="numero_identificacion_cooperativa" value="{{numero_identificacion_cooperativa}}" required
-              placeholder="Ingrese el titulo del video ">
-          </div>
-          <div>
-            <input type="text" name="numero_transporte_cooperativa" value="{{numero_transporte_cooperativa}}" required
-              placeholder="Ingrese el titulo del video ">
+      <label id="numero" for="numero">Numero de identificacion tributaria</label>
+      <input type="text" id="numeroIdent" name="numero_identificacion_cooperativa" value="{{numero_identificacion_cooperativa}}" required>
 
-          </div>
-           <div>
-            <select id="horarioSele" name="horario_cooperativa" value="{{horario_cooperativa}}" required>
-              <option value="horario1">7:00 am a 13:00pm</option>
-              <option value="horario2">15:00pm a 18:00pm</option>
-              <option value="horario3">19:00pm a 23:00pm</option> <br>
-            </select>
-          </div>
+      <label id="numTrans" for="numerotransporte">Numero de transportes </label>
+      <input type="text" id="numeroTrans" name="numero_transporte_cooperativa" value="{{numero_transporte_cooperativa}}" required>
+      <br> <br>
 
-          <div>
-            <input type="text" name="contactos_cooperativa" value="{{contactos_cooperativa}}" required
-              placeholder="Ingrese el titulo del video ">
+      <label id="infoConta" for="info">Informacion de contactos</label> <br> <br>
+      <input type="text" id="informacionContac" name="contactos_cooperativa" value="{{contactos_cooperativa}}" required>
 
-          </div>
-          <div>
-            <input type="text" name="email_cooperativa" value="{{email_cooperativa}}" required
-              placeholder="Ingrese el titulo del video ">
-          </div>
-         
-          
-          <div id="boton">
-            <button type="submit">Actualizar</button>
-          </div>
+      <label id="horario" for="horarios">Horarios de atencion</label>
+      <select id="horarioAte" name="horario_cooperativa" value="{{horario_cooperativa}}" required>
+        <option value="horario1">7:00 am a 13:00pm</option>
+        <option value="horario2">15:00pm a 18:00pm</option>
+        <option value="horario3">19:00pm a 23:00pm</option>
+
+        <br>
+
+      </select> <br> <br>
+
+      <u>
+        <h3>Datos del encargado</h3>
+      </u>
+
+      <label id="nombr" for="nombres">Nombres</label> <br>
+      <input type="text" id="nombres" name="nombres_encargado" value="{{nombres_encargado}}" required>
+
+      <label id="numeroCedu" for="numerocedula">Numero de cedula</label>
+      <input type="text" id="numCedu" name="cedula_encargado" value="{{cedula_encargado}}" required>
+
+      <label id="sexo" for="sexo">Sexo:</label> <br> <br> <br> <br>
+      <select id="sexoSele" name="sexo_encargado" value="{{sexo_encargado}}" required>
+       <option >Masculino</option>
+        <option >Femenino</option>
+      </select> <br> <br>
+
+      <label id="telfC" for="telefonocelu">Celular</label> <br>
+      <input type="text" id="telefonoC" name="celular_encargado" value="{{celular_encargado}}" required>
+
+      <label id="teleCo" for="telefonoconv">Telefono Convencional</label>
+      <input type="text" id="telefonoCo" name="telefono_encargado" value="{{telefono_encargado}}" required>
+
+      <label id="email" for="emailCorreo">Email</label>
+      <input type="text" id="Email" name="email_encargado" value="{{email_encargado}}" required>
+      <br>
+      <br>
+      <br>
+      <button type="submit">Actualizar</button>
+      <button type="submit" style="background-color: red;">Cancelar</button>
+    </div>
 </form>
 {{/each}}
-</div>

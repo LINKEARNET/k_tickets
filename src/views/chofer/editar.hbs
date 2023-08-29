@@ -1,83 +1,91 @@
 <link rel="stylesheet" href="/css/chofer/editar.css">
 {{#each lista}}
-<from action="/chofer/editar/{{id_chofer}}"method="post">
-<head>
+<form action="/chofer/editar/{{id_chofer}}" method="post">
+
+  <head>
     <div id="contendodrhe">
-        <div>
-            <div class="navbar">
-                <div id="imagen">
-                    <img src="/img/logon.png"></img></div>
-                    <a id="inicio" href="#">Inicio</a>
-                    <a id="administrador" href="#">Administrador</a>
-            </div>
-            <div class="contenedorimagenes">
+      <div>
+        <div class="navbar">
+          <div id="imagen">
+            <img src="/img/logon.png"></img>
+          </div>
+          <a id="inicio" href="#">Inicio</a>
+          <a id="administrador" href="#">Administrador</a>
+        </div>
+        <div class="contenedorimagenes">
           <img class="icono" src="/img/empleados.png" alt="">
+        </div>
       </div>
-    </div>
-</head>
+  </head>
   <div id="container">
     <img class="fondo" src="/img/registro de choferes.jpg" alt="">
     <h2>Registro De Choferes</h2>
-    <u><h3>Datos personales</h3></u>
+    <u>
+      <h3>Datos personales</h3>
+    </u>
 
-      <label id="numce" for="cedula">Cedula</label> <br>
-      <input type="number" id="cedula" name="cedula_chofer" value="{{cedula_chofer}}" required> 
+    <label id="numce" for="cedula">Cedula</label> <br>
+    <input type="number" id="cedula" name="cedula_chofer" value="{{cedula_chofer}}" required>
 
-      <label id="name" for="nombre">Nombres</label>
-      <input type="text" id="nombre" name="nombres_chofer" value="{{nombres_chofer}}" required>
+    <label id="name" for="nombre">Nombres</label>
+    <input type="text" id="nombre" name="nombres_chofer" value="{{nombres_chofer}}" required>
 
-      <label id="apelli" for="apellido">Apellidos</label> 
-      <input type="text" id="apellido" name="apellidos_chofer" value="{{apellidos_chofer}}" required>
-        <br> <br>
+    <label id="apelli" for="apellido">Apellidos</label>
+    <input type="text" id="apellido" name="apellidos_chofer" value="{{apellidos_chofer}}" required>
+    <br> <br>
 
-      <label id="sexo" for="sexo">Sexo</label>
-      <select id="sexoSele" name="sexo_chofer" value="{{sexo_chofer}}" required>
-        <option value="masculino">Masculino</option>
-        <option value="femenino">Femenino</option>
-        <option value="otro">Otro</option> 
-      </select>
+    <label id="sexo" for="sexo">Sexo</label>
+    <select id="sexoSele" name="sexo_chofer" value="{{sexo_chofer}}" required>
+      <option value="masculino">Masculino</option>
+      <option value="femenino">Femenino</option>
+    </select>
 
-      <label id="estado" for="estado">Estado Civil</label>
-      <select id="estadoCivil" name="estado_civil_chofer" value="{{estado_civil_chofer}}" required>
-        <option value="soltero/a">Soltero/a</option>
-        <option value="casado/a">Casado/a</option>
-        <option value="divorciado/a">Divorciado/a</option>
-        <option value="viudo/a">Viudo/a</option> <br>
-      </select> <br> <br>
+    <label id="estado" for="estado">Estado Civil</label>
+    <select id="estadoCivil" name="estado_civil_chofer" value="{{estado_civil_chofer}}" required>
+      <option value=""></option>
+      <option value="soltero/a">Soltero/a</option>
+      <option value="casado/a">Casado/a</option>
+      <option value="divorciado/a">Divorciado/a</option>
+      <option value="viudo/a">Viudo/a</option> <br>
+    </select> <br> <br>
 
-      <label id="date" for="fecha_nacimiento">Fecha de Nacimiento</label> 
-      <input type="date" id="fecha_nacimiento" name="fecha_nacimiento_chofer" value="{{fecha_nacimiento_chofer}}" required>
+    <label id="date" for="fecha_nacimiento">Fecha de Nacimiento</label>
+    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento_chofer" value="{{fecha_nacimiento_chofer}}"
+      required>
     <br>
-      <label id="direccion" for="direccion">Direccion</label> <br>
-      <input type="text" id="direccionn" name="direccion_chofer" value="{{direccion_chofer}}" required>
-      
-      <label id="licencia" for="licencia">Tipo de Licencia</label>
-      <select id="tipolicencia" name="tipo_licencia" value="{{tipo_licencia}}" required>
-        <option value="tipo A">Tipo A</option>
-        <option value="tipo B">Tipo B</option>
-        <option value="tipo C">Tipo C</option>
-      </select> 
+    <label id="direccion" for="direccion">Direccion</label> <br>
+    <input type="text" id="direccionn" name="direccion_chofer" value="{{direccion_chofer}}" required>
 
-      <label id="email" for="emailCorreo">Email@</label> 
-      <input type="text" id="Email" name="email_chofer" value="{{email_chofer}}" required>
+    <label id="licencia" for="licencia">Tipo de Licencia</label>
+    <select id="tipolicencia" name="tipo_licencia" value="{{tipo_licencia}}" required>
+      <option value="tipo A">Tipo A</option>
+      <option value="tipo B">Tipo B</option>
+      <option value="tipo C">Tipo C</option>
+    </select>
 
-      <label id="emision" for="emision">Fecha de Emisón</label>
-      <input type="date" id="fechaemision" name="fecha_emision_licencia" value="{{fecha_emision_licencia}}" required>
-        <br> <br>
+    <label id="email" for="emailCorreo">Email@</label>
+    <input type="text" id="Email" name="email_chofer" value="{{email_chofer}}" required>
 
-        <label id="vencimiento" for="vencimiento">Fecha de Vencimiento</label>
-      <input type="date" id="fechavencimiento" name="fecha_vencimiento_licencia" value="{{fecha_vencimiento_licencia}}" required>
-        <br> <br>
+    <label id="emision" for="emision">Fecha de Emisón</label>
+    <input type="date" id="fechaemision" name="fecha_emision_licencia" value="{{fecha_emision_licencia}}" required>
+    <br> <br>
 
-
-      <label id="telfC" for="telefonocelu">Telefono Celular</label> <br>
-      <input type="number" id="telefonoC" name="celular_chofer" required>
+    <label id="vencimiento" for="vencimiento">Fecha de Vencimiento</label>
+    <input type="date" id="fechavencimiento" name="fecha_vencimiento_licencia" value="{{fecha_vencimiento_licencia}}"
+      required>
+    <br> <br>
 
 
-     <div id="boton">
-        <button type="submit">Actualizar</button>
-      </div>
-  
+    <label id="telfC" for="telefonocelu">Celular</label> <br>
+    <input type="number" id="telefonoC" name="celular_chofer" value="{{celular_chofer}}" required>
+
+
+    <div id="boton">
+      <button type="submit">Actualizar</button>
+    </div>
+    <div class="cancelar">
+      <button type="submit">Cancelar</button>
+    </div>
+
 </form>
-{{/each}}
-
+    {{/each}}

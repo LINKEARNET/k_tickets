@@ -195,10 +195,29 @@
   max-width:840px;
   margin: 0 auto 8px auto;
 }
+#card5 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  padding: 80px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  position: absolute;
+  top: 1700px;
+  left: 500px;
+}
+#card5 img{
+  border-radius: 100%;
+  height: 150px;
+  width: 90px;
+}
+#card5 a{
+  color: #F28705;
+}
 #footer{
   background-color: #1D202A;
   position: relative;
-  top: 1700px;
+  top: 2100px;
   padding: 100px; 
 }
 #footer p{

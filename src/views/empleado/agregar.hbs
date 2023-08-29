@@ -1,52 +1,61 @@
 <link rel="stylesheet" href="/css/empleados/empleados.css">
-<form action="/empleado/agregar"method="POST">
-<body>
-<head>
- 
-    <div id="contendodrhe">
+<form action="/empleado/agregar" method="POST">
+
+  <body>
+
+    <head>
+
+      <div id="contendodrhe">
         <div>
-            <div class="navbar">
-                <div id="imagen">
-                    <img src="/img/logon.png"></img></div>
-                    <a href="/inicio2">Inicio</a>
-                    <a id="administrador" href="#">Administrador</a>
-                    <img id="img2" src="/img/perfil.png" alt="">
+          <div class="navbar">
+            <div id="imagen">
+              <img src="/img/logon.png"></img>
             </div>
-    </div>
-</head>
-  <div id="container">
-    <h2>Registro de Empleados</h2>
-    <u><h3>Datos personales</h3></u>
-    
+            <a href="/inicio2">Inicio</a>
+            <a id="administrador" href="#">Administrador</a>
+            <img id="img2" src="/img/perfil.png" alt="">
+          </div>
+        </div>
+    </head>
+    <div id="container">
+      <h2>Registro de Empleados</h2>
+      <u>
+        <h3>Datos personales</h3>
+      </u>
+
       <label id="name" for="nombre">Nombre</label> <br>
       <input type="text" id="nombre" name="nombres_empleado" required>
 
       <label id="apelli" for="apellido">Apellido:</label>
       <input type="text" id="apellido" name="apellido_empleado" required>
 
-      <label id="date" for="fecha_nacimiento">Fecha de Nacimiento:</label> 
+      <label id="date" for="fecha_nacimiento">Fecha de Nacimiento:</label>
       <input type="date" id="fecha_nacimiento" name="fecha_nacimiento_empleado" required>
-        <br> <br>
+      <br> <br>
       <label id="numce" for="cedula">Número de Cédula:</label> <br>
       <input type="text" id="cedula" name="cedula_empleado" required>
 
       <label id="sexo" for="sexo">Sexo:</label>
       <select id="sexoSele" name="sexo_empleado" required>
+        <option ></option>
         <option value="masculino">Masculino</option>
         <option value="femenino">Femenino</option>
-        <option value="otro">Otro</option> <br>
 
       </select> <br> <br>
-    <u><h3>Lugar de residencia</h3></u>
+      <u>
+        <h3>Lugar de residencia</h3>
+      </u>
 
       <label id="calleSe" for="nombre">Calle secundaria</label> <br>
       <input type="text" id="callesecu" name="calle_secundaria" required>
 
       <label id="calleP" for="nombre">Calle principal</label>
       <input type="text" id="callepri" name="calle_principal_empleado" required>
-        <br> <br>
+      <br> <br>
 
-      <u><h3>Contactos</h3></u>
+      <u>
+        <h3>Contactos</h3>
+      </u>
 
       <label id="telfC" for="telefonocelu">Telefono Celular</label> <br>
       <input type="text" id="telefonoC" name="celular_empleado" required>
@@ -54,21 +63,22 @@
       <label id="teleCo" for="telefonoconv">Telefono Convencional</label>
       <input type="text" id="telefonoCo" name="telefono_empleado" required>
 
-      <label id="email" for="emailCorreo">Email@</label> 
+      <label id="email" for="emailCorreo">Email@</label>
       <input type="text" id="Email" name="email_empleado" required>
 
       <label id="area" for="Area">Area:</label> <br> <br>
       <select id="AreaTra" name="area_empleado" required>
+        <option ></option>
         <option value="chofer">Chofer</option>
         <option value="bodegero">Bodegero</option>
         <option value="buses">Buses</option>
       </select>
-        <br>
-        <br>
+      <br>
+      <br>
       <button type="submit">Registrar</button>
       <button type="submit" style="background-color: red;">Cancelar</button>
-</div>
-<footer id="footer" class="">
+    </div>
+    <footer id="footer" class="">
       <div class="container">
         <div class="row text-left">
           <div id="contact">
@@ -78,9 +88,9 @@
             <img id="btntelef" src="/img/telef.png" alt="">
             <b><a>Whatsapp</a><br></b>
             <a>09 3456 7890</a><br> <br>
-            <b><a>Email</a></b><br> 
+            <b><a>Email</a></b><br>
             <a>hola@tickets.com</a> <br> <br>
-            <b><a>Call Center</a></b><br> 
+            <b><a>Call Center</a></b><br>
             <a>+59322 3456 7891</a><br> <br>
           </div>
           <div id="destin">
@@ -97,12 +107,14 @@
             <a href="">Inolvidables eventos</a> <br>
           </div>
           <div id="follow">
-           <b> <p>Síguenos</p></b>
-           <a href=""><img id="ig" src="/img/insta.png" alt=""></a>
-           <a href=""><img id="fb" src="/img/fb.png" alt=""></a>
+            <b>
+              <p>Síguenos</p>
+            </b>
+            <a href=""><img id="ig" src="/img/insta.png" alt=""></a>
+            <a href=""><img id="fb" src="/img/fb.png" alt=""></a>
           </div>
         </div>
       </div>
     </footer>
-</body>
+  </body>
 </form>

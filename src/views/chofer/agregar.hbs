@@ -1,23 +1,24 @@
 <link rel="stylesheet" href="/css/chofer/agregar.css">
 <form action="/chofer/agregar"method="POST">
-<body>
-<head>
+ <body>
+ <head>
          <div id="contendodrhe">
         <div>
             <div class="navbar">
                 <div id="imagen">
                     <img src="/img/logon.png"></img></div>
                     <a href="/inicio">Inicio</a>
+                    <a id="listar" href="#">Listar</a>
                     <a id="administrador" href="#">Administrador</a>
                     <img id="img2" src="/img/perfil.png" alt="">
             </div>
     </div>
          
-</head>
+  </head>
   <div id="container">
     <img class="fondo" src="/img/registro de choferes.jpg" alt="">
     <h2>Registro De Choferes</h2>
-    <u><h3>Datos personales</h3></u>
+    <h3>Datos personales</h3>
       <label id="numce" for="cedula">Cedula</label> <br>
       <input type="number" id="cedula" name="cedula_chofer" required> 
 
@@ -30,13 +31,14 @@
 
       <label id="sexo" for="sexo">Sexo</label>
       <select id="sexoSele" name="sexo_chofer" required>
+        <option value=""></option>
         <option value="masculino">Masculino</option>
         <option value="femenino">Femenino</option>
-        <option value="otro">Otro</option> 
       </select>
 
       <label id="estado" for="estado">Estado Civil</label>
       <select id="estadoCivil" name="estado_civil_chofer" required>
+        <option value=""></option>
         <option value="soltero/a">Soltero/a</option>
         <option value="casado/a">Casado/a</option>
         <option value="divorciado/a">Divorciado/a</option>
@@ -45,12 +47,14 @@
 
       <label id="date" for="fecha_nacimiento">Fecha de Nacimiento</label> 
       <input type="date" id="fecha_nacimiento" name="fecha_nacimiento_chofer" required>
-    <br>
+ <br>
+
       <label id="direccion" for="direccion">Direccion</label> <br>
       <input type="text" id="direccionn" name="direccion_chofer" required>
       
       <label id="licencia" for="licencia">Tipo de Licencia</label>
       <select id="tipolicencia" name="tipo_licencia" required>
+        <option value=""></option>
         <option value="tipo A">Tipo A</option>
         <option value="tipo B">Tipo B</option>
         <option value="tipo C">Tipo C</option>
@@ -68,7 +72,7 @@
         <br> <br>
 
 
-      <label id="telfC" for="telefonocelu">Telefono Celular</label> <br>
+      <label id="telfC" for="telefonocelu">Celular</label> <br>
       <input type="number" id="telefonoC" name="celular_chofer" required>
 
         <br>
@@ -81,7 +85,7 @@
         </div>
   </div>
 
-<footer id="footer" class="">
+ <footer id="footer" class="">
       <div class="container">
         <div class="row text-left">
           <div id="contact">
@@ -117,6 +121,6 @@
         </div>
       </div>
     </footer>
-</body>
+  </body>
 </form>
 

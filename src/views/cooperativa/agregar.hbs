@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="/css/cooperativa/cooperativa.css">
-<from action="/"method="post">
+<link rel="stylesheet" href="/css/cooperativa/agregar.css">
+<form action="/cooperativa/agregar"method="POST">
 <body>
 <head>
     <div id="contendodrhe">
@@ -17,69 +17,56 @@
     <h2>Registro de Cooperativas</h2>
     <u><h3>Datos de la cooperativa</h3></u>
     
-    <form action="#" method="post">
       <label id="nameCoop" for="nombre">Nombre de la cooperativa</label> <br>
-      <input type="text" id="nombrecoopera" name="nombre" required>
+      <input type="text" id="nombrecoopera" name="nombres_cooperativa" required>
 
       <label id="numero" for="numero">Numero de identificacion tributaria</label>
-      <input type="text" id="numeroIdent" name="numero" required>
+      <input type="text" id="numeroIdent" name="numero_identificacion_cooperativa" required>
 
-      <label id="numTrans" for="numerotransporte">Numero de transportes (buses)</label> 
-      <input type="text" id="numeroTrans" name="numerotrans" required>
+      <label id="numTrans" for="numerotransporte">Numero de transportes </label> 
+      <input type="text" id="numeroTrans" name="numero_transporte_cooperativa" required>
         <br> <br> 
 
         <label id="infoConta" for="info">Informacion de contactos</label> <br> <br>
-      <input type="text" id="informacionContac" name="info" required>
+      <input type="text" id="informacionContac" name="contactos_cooperativa" required>
 
         <label id="horario" for="horarios">Horarios de atencion</label>  
-        <select id="horarioAte" name="horarios" required>
-<<<<<<< HEAD
+        <select id="horarioAte" name="horario_cooperativa" required>
           <option value="horario1">7:00 am a 13:00pm</option>
           <option value="horario2">15:00pm a 18:00pm</option>
           <option value="horario3">19:00pm a 23:00pm</option>
-=======
-          <option value="masculino">7:00 am a 13:00pm</option>
-          <option value="femenino">15:00pm a 18:00pm</option>
-          <option value="otro">19:00pm a 23:00pm</option>
->>>>>>> e2b5ca344b788444be4894db6cadeac13cb6da25
 
        <br>
 
       </select> <br> <br>
-    </form> <br>
 
     <u><h3>Datos del encargado</h3></u>
 
       <label id="nombr" for="nombres">Nombres</label> <br>
-      <input type="text" id="nombres" name="nombres" required>
-
-      <label id="apelli" for="apellido">Apellidos</label>
-      <input type="text" id="apellido" name="apellido" required>
+      <input type="text" id="nombres" name="nombres_encargado" required>
 
       <label id="numeroCedu" for="numerocedula">Numero de cedula</label> 
-      <input type="text" id="numCedu" name="numerocedula" required>
+      <input type="text" id="numCedu" name="cedula_encargado" required>
       
-      <label id="sexo" for="sexo">Area:</label> <br> <br> <br> <br>
-      <select id="sexoSele" name="sexo" required>
-        <option value="chofer">Hombre</option>
-        <option value="bodegero">Mujer</option>
-        <option value="buses">Otro</option>
+      <label id="sexo" for="sexo">Sexo:</label> <br> <br> <br> <br>
+      <select id="sexoSele" name="sexo_encargado" required>
+        <option >Masculino</option>
+        <option >Femenino</option>
       </select> <br> <br>
-      <u><h3>Contactos</h3></u>
 
-      <label id="telfC" for="telefonocelu">Telefono Celular</label> <br>
-      <input type="text" id="telefonoC" name="telefonocelu" required>
+      <label id="telfC" for="telefonocelu">Celular</label> <br>
+      <input type="text" id="telefonoC" name="celular_encargado" required>
 
       <label id="teleCo" for="telefonoconv">Telefono Convencional</label>
-      <input type="text" id="telefonoCo" name="telefonoconv" required>
+      <input type="text" id="telefonoCo" name="telefono_encargado" required>
 
-      <label id="email" for="emailCorreo">Email@</label> 
-      <input type="text" id="Email" name="Email" required>
+      <label id="email" for="emailCorreo">Email</label> 
+      <input type="text" id="Email" name="email_encargado" required>
         <br>
         <br>
         <br>
-      <input id="cancel" type="submit" value="Cancelar">
-      <input id="save" type="submit" value="Registrar">
+      <button type="submit">Registrar</button>
+      <button type="submit" style="background-color: red;">Cancelar</button>
   </div>
 
 <footer id="footer" class="">
@@ -119,4 +106,4 @@
       </div>
     </footer>
 </body>
-</from>
+</form>
