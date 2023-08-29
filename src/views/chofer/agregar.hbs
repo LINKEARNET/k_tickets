@@ -8,7 +8,7 @@
                 <div id="imagen">
                     <img src="/img/logon.png"></img></div>
                    <a href="/inicio2">Inicio</a>
-                    <a href="/chofer/listar">Listar</a>
+                    <a id="listar" href="/chofer/listar">Listar</a>
                     <a id="administrador" href="#">Administrador</a>
                     <img id="img2" src="/img/perfil.png" alt="">
             </div>
@@ -16,7 +16,7 @@
          
   </head>
   <div id="container">
-    <img class="fondo" src="/img/registro de choferes.jpg" alt="">
+    <img class="fondo" src="/img/choferesr.jpg" alt="">
     <h2>Registro De Choferes</h2>
     <h3>Datos personales</h3>
       <label id="numce" for="cedula">Cedula</label> <br>
@@ -60,7 +60,7 @@
         <option value="tipo C">Tipo C</option>
       </select> 
 
-      <label id="email" for="emailCorreo">Email@</label> 
+      <label id="email" for="emailCorreo">Email</label> 
       <input type="text" id="Email" name="email_chofer" required>
 
       <label id="emision" for="emision">Fecha de Emisón</label>
@@ -84,6 +84,7 @@
           <button (click)="volverRegistro()">Cancelar</button>
         </div>
   </div>
+  
 
  <footer id="footer" class="">
       <div class="container">

@@ -1,11 +1,7 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #e5e5f7;
-
-background-image:  radial-gradient(#040a84 0.75px, transparent 0.75px), radial-gradient(#040a84 0.75px, #e5e5f7 0.75px);
-background-size: 30px 30px;
-background-position: 0 0,15px 15px;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
 
     #contenedorhe{
@@ -88,6 +84,7 @@ background-position: 0 0,15px 15px;
   
 #container{
   position: relative;
+  top: 50px;
     width: 1000px;
     max-width: 1000px;
     height: 525px;
@@ -305,94 +302,94 @@ button {
 
 
 .container{
-    max-width:840px;
-    margin: 0 auto 8px auto;
-  }
-  #footer{
-    background-color: #1D202A;
-    position: relative;
-    top: 135px;
-    padding: 80px; 
-  }
-  #footer p{
-    position: absolute;
-    color: white;
-    top: 35px;
-  }
-  #contact{
-    position: absolute;
-  }
-  #contact p{
-    position: absolute;
-    top: -65px;
-  }
-  #contact a{
-    position: relative;
-    color: white;
-    left: 80px;
-    top: -50px;
-  }
-  #btnwasa{
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    top: 0px;
-  }
-  #btnmail{
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    top: 75px;
-  }
-  #btntelef{
-    position: absolute;
-    height: 40px;
-    width: 40px; 
-    top: 145px;
-  }
-  #inf a{
-    position: absolute;
-    left: 350px;
-    color: rgb(124, 124, 124);
-  }
-  #destin a{
-    position: absolute;
-    left: 600px;
-    color: rgb(124, 124, 124);
-  }
-  #destin p{
-    position: absolute;
-    left: 600px;
-    color: white;
-  }
-  .soport p{
-    left: 800px;
-  }
-  #soport a{
-    position: absolute;
-    left: 800px;
-    color: rgb(124, 124, 124);
-  }
-  #soport p{
-    position: absolute;
-    left: 800px;
-    color: white;
-  }
-  #follow{
-    position: absolute;
-    top: 0px;
-    left: 1030px;
-  }
-  #fb{
-    position: absolute;
-    height: 40px;
-    width: 40px; 
-    top: 80px;
-  }
-  #ig{
-    position: absolute;
-    height: 40px;
-    width: 40px; 
-    top: 80px;
-    left: 50px;
-  }
+  max-width:840px;
+  margin: 0 auto 8px auto;
+}
+#footer{
+  background-color: #1D202A;
+  position: relative;
+  top: 200px;
+  padding: 100px; 
+}
+#footer p{
+  position: absolute;
+  color: white;
+  top: 35px;
+}
+#contact{
+  position: absolute;
+}
+#contact p{
+  position: absolute;
+  top: -65px;
+}
+#contact a{
+  position: relative;
+  color: white;
+  left: 80px;
+  top: -50px;
+}
+#btnwasa{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  top: 0px;
+}
+#btnmail{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  top: 75px;
+}
+#btntelef{
+  position: absolute;
+  height: 40px;
+  width: 40px; 
+  top: 145px;
+}
+#inf a{
+  position: absolute;
+  left: 350px;
+  color: rgb(124, 124, 124);
+}
+#destin a{
+  position: absolute;
+  left: 600px;
+  color: rgb(124, 124, 124);
+}
+#destin p{
+  position: absolute;
+  left: 600px;
+  color: white;
+}
+.soport p{
+  left: 800px;
+}
+#soport a{
+  position: absolute;
+  left: 800px;
+  color: rgb(124, 124, 124);
+}
+#soport p{
+  position: absolute;
+  left: 800px;
+  color: white;
+}
+#follow{
+  position: absolute;
+  top: 0px;
+  left: 1030px;
+}
+#fb{
+  position: absolute;
+  height: 40px;
+  width: 40px; 
+  top: 80px;
+}
+#ig{
+  position: absolute;
+  height: 40px;
+  width: 40px; 
+  top: 80px;
+  left: 50px;
+}

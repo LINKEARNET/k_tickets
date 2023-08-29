@@ -10,7 +10,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  right: 60px;
+  right: 0px;
+}
+#administrador{
+  position: absolute;
+  left: 1050px;
 }
 #contenedorhe{
   position: absolute;
@@ -21,279 +25,280 @@ body {
   max-width: 100%;
   max-height: 100%;
 }
-#contenedor{
-  position: relative;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  max-height: 100%;
-}
-.navbar {
-    background-color: #1D202B;
-    overflow: hidden;
-  }
-
-  .navbar a {
-    float: left;
-    display: block;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-
-  .navbar a:hover {
-    color: rgb(161, 157, 157);
-  }
-#imagen{
-  width: 100%;
-  height: 100%;
-  max-width: 50%;
-  max-height: 100%;
-}
-#imagen img{
-  width: 20%;
-  height: 40%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-#boton{
-  width: 160px;
-  height: 48px;
-  background-color: #F28705;
-  border: none;
-  color: white;
-  padding: 5px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  border-radius: 30px;
-  right: 100px;
-  position: absolute;
-}
-#inicio{
-  position: absolute;
-  left: 650px;
-}
-
 #container{
+  position: relative;
+  top: 40px;
   max-width: 2000px;
   margin: 50px 110px;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 20px;
   box-shadow: 0px 0px 10px rgb(0, 0, 0);
   background-image: url(/img/cooperativaCh.png);
+  box-shadow: 0px 0px 20px#05198b;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment:scroll;
+  border-radius: 100px;
+
 }
-#container h2{
-  position: relative;
+
+.navbar {
+  background-color: #1D202B;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
   text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+#imagen{
+width: 100%;
+height: 100%;
+max-width: 50%;
+max-height: 100%;
+}
+#imagen img{
+width: 20%;
+height: 40%;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+}
+h2{
+  position: relative;
+  top: -71px;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+h3 {
+position: relative;
+top: -55px;
+left: 20px;
+
 }
 #nameCoop{
-  font-family: Arial, Helvetica, sans-serif;
-  position: absolute;
-  top: 214px;
-  left: 526px;
+font-family: Arial, Helvetica, sans-serif;
+position: absolute;
+top: 85px;
+left: 45px;
 }
 #nombrecoopera{
-  position: absolute;
-  right: 525px;
-  width: 310px;
-  height: 30px;
-  border-radius: 9px;
-  padding: 0px, 31px, 0px, 7px;
-  border-color: #000000;
-  border-width: 2px;
+position: relative;
+right: 5px;
+width: 260px;
+height: 30px;
+border-radius: 30px;
+padding: 0px, 31px, 0px, 7px;
+border-color: #000000;
+border-width: 2px;
 }
 #numero{
-  position: relative;
-  left: 70px;
-  top: -35px;
-  font-family: Arial, Helvetica, sans-serif;
+position: relative;
+left: 80px;
+top: -50px;
+font-family: Arial, Helvetica, sans-serif;
 }
 #numeroIdent{
-  position: relative;
-  width: 250px;
-  height: 30px;
-  border-radius: 5px 2px;
-  padding: 0px, 31px, 0px, 7px;
-  gap: 10px;
-  left: -180px;
+position: relative;
+width: 250px;
+height: 30px;
+border-radius: 30px;
+padding: 0px, 31px, 0px, 7px;
+gap: 10px;
+left: -170px;
 }
 #numTrans{
-  position: relative;
-  left: -90px;
-  top: -35px;
-  font-family: Arial, Helvetica, sans-serif;
+position: relative;
+left: -75px;
+top: -50px;
+font-family: Arial, Helvetica, sans-serif;
 }
 #numeroTrans{
-  position: relative;
-  right: 315px;
-  width: 140px;
-  height: 30px;
-  border-radius: 5px 2px;
+position: relative;
+top: -40px;
+right: -695px;
+width: 140px;
+height: 30px;
+border-radius: 30px;
 }
 #horario{
-  position: relative;
-  left: 70px;
-  top: -55px;
-  font-family: Arial, Helvetica, sans-serif;
+position: relative;
+left: 70px;
+top: -95px;
+font-family: Arial, Helvetica, sans-serif;
 }
 #horarioAte{
-  position: relative;
-  right: 80px;
-  width: 230px;
-  height: 30px;
-  border-radius: 5px 2px;
+top: -45px;
+position: relative;
+right: 70px;
+width: 230px;
+height: 30px;
+border-radius: 30px;
 }
 #infoConta{
-  position: relative;
-  left: 0px;
-  top: 6px;
-  font-family: Arial, Helvetica, sans-serif;
+position: relative;
+left: 0px;
+top: -35px;
+font-family: Arial, Helvetica, sans-serif;
 }
 #informacionContac{
-  position: relative;
-  right: 0px;
-  width: 250px;
-  height: 30px;
-  border-radius: 5px 2px;
+position: relative;
+top: -45px;
+right: 0px;
+width: 250px;
+height: 30px;
+border-radius: 30px;
 }
 
 #nombr{
-  position: relative;
-  left: 0px;
-  top: 10px;
-  font-family: Arial, Helvetica, sans-serif;
+position: relative;
+left: 0px;
+top: -40px;
+font-family: Arial, Helvetica, sans-serif;
 }
 #nombres{
-  top: 9px;
-  position: relative;
-  right: 0px;
-  width: 250px;
-  height: 30px;
-  border-radius: 5px 2px;
+top: -35px;
+position: relative;
+right: 0px;
+width: 250px;
+height: 30px;
+border-radius: 30px;
 }
 #apelli{
-  position: relative;
-  left: 70px;
-  top: -25px;
-  font-family: Arial, Helvetica, sans-serif;
+position: relative;
+left: 0px;
+top: 0px;
+font-family: Arial, Helvetica, sans-serif;
 }
 #apellido{
-  top: 9px;
-  position: relative;
-  right: 0px;
-  width: 250px;
-  height: 30px;
-  border-radius: 5px 2px;
+top: -55px;
+position: relative;
+right: 0px;
+width: 250px;
+height: 30px;
+border-radius: 5px 2px;
 }
 #numeroCedu{
-  position: relative;
-  left: 70px;
-  top: -25px;
-  font-family: Arial, Helvetica, sans-serif;
+position: relative;
+left: 80px;
+top: -75px;
+font-family: Arial, Helvetica, sans-serif;
 }
 #numCedu{
-  top: 9px;
-  position: relative;
-  right: 65px;
-  width: 310px;
-  height: 30px;
-  border-radius: 5px 2px;
+top: -35px;
+position: relative;
+left: -60px;
+width: 250px;
+height: 30px;
+border-radius: 30px;
+
 }
 #sexo{
-  position: relative;
-  left: -1026px;
-  top: 55px;
-  font-family: Arial, Helvetica, sans-serif;
+position: relative;
+left: 50px;
+top: -76px;
+font-family: Arial, Helvetica, sans-serif;
 }
 #sexoSele{
-  position: relative;
-  right: 0px;
-  width: 250px;
-  height: 30px;
-  border-radius: 5px 2px;
+position: relative;
+top: -143px;
+left: 670px;
+width: 250px;
+height: 30px;
+border-radius: 30px;
+
 }
 
 #telfC{
-  position: relative;
-  left: 0px;
-  top: 10px;
-  font-family: Arial, Helvetica, sans-serif;
+position: relative;
+left: 0px;
+top: -30px;
+font-family: Arial, Helvetica, sans-serif;
 }
 #telefonoC{
-  top: 9px;
-  position: relative;
-  right: 0px;
-  width: 310px;
-  height: 30px;
-  border-radius: 5px 2px;
+top: -25px;
+position: relative;
+right: 0px;
+width: 250px;
+height: 30px;
+border-radius: 30px;
+
 }
 #teleCo{
-  position: relative;
-  left: 70px;
-  top: -25px;
-  font-family: Arial, Helvetica, sans-serif;
+position: relative;
+left: 70px;
+top: -70px;
+font-family: Arial, Helvetica, sans-serif;
 }
 #telefonoCo{
-  top: 9px;
-  position: relative;
-  right: 95px;
-  width: 310px;
-  height: 30px;
-  border-radius: 5px 2px;
+top: -25px;
+position: relative;
+right: 100px;
+width: 250px;
+height: 30px;
+border-radius: 30px;
 }
 #email{
-  position: relative;
-  left: -25px;
-  top: -25px;
-  font-family: Arial, Helvetica, sans-serif;
+position: relative;
+left: 30px;
+top: -70px;
+font-family: Arial, Helvetica, sans-serif;
 }
 #Email{
-  top: 9px;
-  position: relative;
-  right: 88px;
-  width: 265px;
-  height: 30px;
-  border-radius: 5px 2px;
+top: -25px;
+position: relative;
+right: 35px;
+width: 260px;
+height: 30px;
+border-radius: 30px;
 }
 #area{
-  position: relative;
-  left: 1px;
-  top: 15px;
-  font-family: Arial, Helvetica, sans-serif;
+position: relative;
+left: 1px;
+top: 15px;
+font-family: Arial, Helvetica, sans-serif;
 }
 #AreaTra{
-  position: relative;
-  right: 0px;
-  width: 310px;
-  height: 30px;
-  border-radius: 5px 2px;
+position: relative;
+right: 0px;
+width: 310px;
+height: 30px;
+border-radius: 5px 2px;
 }
-#cancel{
-  position: relative;
-  left: 1000px;
-  width: 100px;
-  height: 50px;
-  border-radius: 20px;
-  background-color: #FF0D0D;
+button {
+  background-color: #4CAF50;
   color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  float: left;
+  margin-right: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  position: relative;
+  left: 350px;
+  top: -55px;
+  border-top-left-radius: 0cm;
 }
-#save{
-  position: relative;
-  left: 780px;
-  width: 100px;
-  height: 50px;
-  border-radius: 20px;
-  background-color: #0084FF;
-  color: white;
+
+.registrarse button {
+  background-color: #2579e6;
+}
+
+
+.cancelar button {
+  background-color: #ec0d0d;
 }
 
 .container{

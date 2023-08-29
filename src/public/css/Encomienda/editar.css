@@ -22,64 +22,63 @@ body {
   max-height: 100%;
 }
 .navbar {
-    background-color: #1D202B;
-    overflow: hidden;
-  }
-
-  .navbar a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-
-  .navbar a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-#imagen{
-  width: 100%;
-  height: 100%;
-  max-width: 50%;
-  max-height: 100%;
+  background-color: #1D202B;
+  overflow: hidden;
 }
-#imagen img{
-  width: 20%;
-  height: 40%;
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+#img2{
+  position: relative;
+  width: 67px;
+  height: 63px;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  right: -10px;
 }
-#boton{
-  width: 160px;
-  height: 48px;
-  background-color: #F28705;
-  border: none;
-  color: white;
-  padding: 5px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  border-radius: 30px;
-  right: 100px;
+  #imagen{
+    width: 100%;
+    height: 100%;
+    max-width: 50%;
+    max-height: 100%;
+  }
+  #imagen img{
+    width: 20%;
+    height: 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+#administrador{
   position: absolute;
-}
-#inicio{
-  position: absolute;
-  left: 650px;
+  left: 1050px;
 }
 
 /*formulario*/  
 #container{
+  position: relative;
+  top: 50px;
   max-width: 2000px;
   margin: 50px 110px;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 20px;
   box-shadow: 0px 0px 10px rgb(0, 0, 0);
   background-image: url(/img/encomiendasBack.png);
+  box-shadow: 0px 0px 20px#05198b;
+  border-radius: 100px;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment:scroll;
@@ -87,29 +86,39 @@ body {
 #container h2{
   position: relative;
   text-align: center;
+  top: -70px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+h3 {
+  position: relative;
+  top: 0px;
+  text-decoration: underline;
+  padding-top: 25px;
 }
 #name{
   font-family: Arial, Helvetica, sans-serif;
 }
 #nombre{
-  width: 310px;
+  width: 265px;
   height: 30px;
-  border-radius: 5px 2px;
   padding: 0px, 31px, 0px, 7px;
   gap: 10px;
+  border-radius: 30px;
 }
-#numeroce{
+#numeroce1{
   position: relative;
   left: 70px;
   top: -35px;
   font-family: Arial, Helvetica, sans-serif;
 }
-#cedula{
-  width: 310px;
+#cedula1{
+  width: 265px;
   height: 30px;
-  border-radius: 5px 2px;
   padding: 0px, 31px, 0px, 7px;
   gap: 10px;
+  border-radius: 30px;
 }
 #numetelef{
   position: relative;
@@ -118,11 +127,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 #telefono{
-  width: 310px;
+  width: 265px;
   height: 30px;
-  border-radius: 5px 2px;
   padding: 0px, 31px, 0px, 7px;
   gap: 10px;
+  border-radius: 30px;
 }
 #correoele{
   position: relative;
@@ -133,52 +142,52 @@ body {
 #correo{
   position: relative;
   right: 0px;
-  width: 310px;
+  width: 265px;
   height: 30px;
-  border-radius: 5px 2px;
+  border-radius: 30px;
 }
 /*destinatario*/
-#calle{
+#direccion{
   position: relative;
-  left: 0px;
-  top: 10px;
+  left: 80px;
+  top: -35px;
   font-family: Arial, Helvetica, sans-serif;
 }
-#callepri{
-  top: 9px;
+#direccione{
+  top: 0px;
   position: relative;
   right: 0px;
-  width: 310px;
+  width: 265px;
   height: 30px;
-  border-radius: 5px 2px;
+  border-radius: 30px;
 }
-#calles{
+#numetelef2{
   position: relative;
-  left: 70px;
-  top: -25px;
+  left: -950px;
+  top: 25px;
   font-family: Arial, Helvetica, sans-serif;
 }
-#callese{
-  top: 9px;
+#telefono2{
+  top: 25px;
   position: relative;
   right: 0px;
-  width: 310px;
+  width: 265px;
   height: 30px;
-  border-radius: 5px 2px;
+  border-radius: 30px;
 }
-#casa{
+#numeroce3{
   position: relative;
   left: 70px;
-  top: -25px;
+  top: -35px;
   font-family: Arial, Helvetica, sans-serif;
 }
-#numcasa{
-  top: 9px;
+#cedula3{
+  top: 0px;
   position: relative;
   right: -16px;
-  width: 310px;
+  width: 265px;
   height: 30px;
-  border-radius: 5px 2px;
+  border-radius: 30px;
 }
 
 /*datos de envio*/
@@ -193,37 +202,38 @@ body {
   top: 9px;
   position: relative;
   right: 0px;
-  width: 310px;
+  width: 265px;
   height: 30px;
-  border-radius: 5px 2px;
+  border-radius: 30px;
 }
 
 #telfC{
   position: relative;
-  left: 0px;
-  top: 10px;
+  left: 70px;
+  top: -27px;
   font-family: Arial, Helvetica, sans-serif;
 }
 #telefonoC{
   top: 9px;
   position: relative;
-  right: 0px;
-  width: 310px;
+  right: 110px;
+  width: 265px;
   height: 30px;
-  border-radius: 5px 2px;
+  border-radius: 30px;
 }
-#date{
+#fechaen{
   position: relative;
-  left: 80px;
+  left: -40px;
   top: -35px;
   font-family: Arial, Helvetica, sans-serif;
 }
 #fecha{
   position: relative;
-  right: 80px;
-  width: 225px;
+  top: -25px;
+  right: -675px;
+  width: 265px;
   height: 30px;
-  border-radius: 5px 2px;
+  border-radius: 30px;
 }
 #numreg{
   position: relative;
@@ -235,43 +245,40 @@ body {
   top: 9px;
   position: relative;
   right: 95px;
-  width: 310px;
+  width: 265px;
   height: 30px;
-  border-radius: 5px 2px;
+  border-radius: 30px;
 }
-#peso{
+#nroencomienda{
   position: relative;
-  left: 70px;
-  top: -25px;
+  left: 0px;
+  top: 0px;
   font-family: Arial, Helvetica, sans-serif;
 }
-#pesoe{
-  top: 9px;
+#encomiendanro{
+  top: -30px;
   position: relative;
-  right: 95px;
-  width: 310px;
+  right: 0px;
+  width: 265px;
   height: 30px;
-  border-radius: 5px 2px;
+  border-radius: 30px;
 }
 
-#cancel{
+#boton {
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  float: left;
+  margin-right: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
   position: relative;
-  left: 1000px;
-  width: 100px;
-  height: 50px;
-  border-radius: 20px;
-  background-color: #FF0D0D;
-  color: white;
+  left: 430px;
+  top: -50px;
+  border-top-left-radius: 0cm;
 }
-#save{
-  position: relative;
-  left: 780px;
-  width: 100px;
-  height: 50px;
-  border-radius: 20px;
-  background-color: #0084FF;
-  color: white;
-}
+
 
 .container{
   max-width:840px;

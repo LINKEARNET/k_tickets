@@ -1,8 +1,8 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
 #contenedorhe{
     position: absolute;
     top: 0%;
@@ -28,7 +28,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    right: 60px;
+    right: -10px;
   }
   .navbar {
       background-color: #1D202B;
@@ -78,22 +78,37 @@ body {
   }
   #inicio{
     position: absolute;
-    left: 650px;
+    left: 950px;
+  }
+
+  #administrador{
+    position: absolute;
+    left: 1050px;
   }
   h2 {
     margin-top: 0;
     text-align: center;
   }
+h1{
+  position: absolute;
+  left: 400px;
+}
   #contenedor{
     max-width: 1150px;
     margin: 50px 110px;
     background-color: rgba(255, 255, 255, 0.5);
-    padding: 20px;
+    padding: 30px;
     box-shadow: 0px 0px 10px rgb(0, 0, 0);
     background-image: url(/img/empleadosBack.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment:scroll;
+    border-radius: 100px;
+    box-shadow: 0px 0px 20px#05198b;
+    position: relative;
+    left: -40px;
+    top: 20px;
+    
 }
 
 
@@ -159,7 +174,7 @@ button {
   #footer{
     background-color: #1D202A;
     position: relative;
-    top: 1700px;
+    top: 100px;
     padding: 100px; 
   }
   #footer p{

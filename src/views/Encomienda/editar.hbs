@@ -2,22 +2,23 @@
 {{#each lista}}
 <form action="/encomienda/editar/{{id_encomienda_remitente}}" method="post">
 
+  <body>
 
     <head>
-  <div id="contendodrhe">
+      <div id="contendodrhe">
         <div>
           <div class="navbar">
             <div id="imagen">
               <img src="/img/logon.png"></img>
             </div>
-           
+
             <a id="administrador" href="#">Administrador</a>
             <img id="img2" src="/img/perfil.png" alt="">
           </div>
         </div>
     </head>
     <div id="container">
-      <h2>Registro de Encomiendas</h2>
+      <h2>Actualización de Encomiendas</h2>
       <u>
         <h3>Remitente</h3>
       </u>
@@ -29,7 +30,8 @@
       <input type="text" id="cedula1" name="cedula_remitente" value="{{cedula_remitente}}" required>
 
       <label id="numetelef" for="telefono"> Telefono:</label>
-      <input type="text" id="telefono" name="telefono_encomienda_remitente"  value="{{telefono_encomienda_remitente}}" required>
+      <input type="text" id="telefono" name="telefono_encomienda_remitente" value="{{telefono_encomienda_remitente}}"
+        required>
 
       <br> <br>
       <label id="correoele" for="correo">Correo Electronico:</label> <br>
@@ -37,42 +39,90 @@
       <br> <br>
 
       <u>
-        <h3>Datos de envio</h3>
-      </u>
-
-      <label id="nameco" for="nomcoop"> Nombres Completos :</label> <br>
-      <input type="text" id="nomcoop" name="nombres_destinatario" value="{{nombres_destinatario}}" required>
-
-      <label id="nameco" for="nomcoop">Numero de cedula :</label> <br>
-      <input type="text" id="nomcoop" name="cedula_destinatario" value="{{cedula_destinatario}}" required>
-
-      <label id="telfC" for="telefonocelu">Direccion :</label>
-      <input type="text" id="telefonoC" name="direccion_destinatario" value="{{direccion_destinatario}}" required>
-
-
-      <label id="numreg" for="registro">telefono encomienda destinatario:</label>
-      <input type="text" id="registro" name="telefono_destinatario"  value="{{telefono_destinatario}}" required>
-
-      <u>
         <h3>Destinatario</h3>
       </u>
 
-      <label id="name" for="nombre">Nombres Cooperativa:</label> <br>
-      <input type="text" id="nombre" name="nombres_cooperativa_detalle_encomienda"  value="{{nombres_cooperativa_detalle_encomienda}}" required>
+      <label id="name" for="nombre">Nombres Completos:</label> <br>
+      <input type="text" id="nombre" name="nombres_destinatario"
+        value="{{nombres_destinatarios}}" required>
 
-      <label id="numeroce2" for="apellido">Cedula:</label>
-      <input type="text" id="cedula2" name="tamano_detalle_encomienda" value="{{tamano_detalle_encomienda}}" required>
+      <label id="numeroce3" for="apellido">Cedula:</label>
+      <input type="text" id="cedula3" name="cedula_destinatario" value="{{cedula_destinatario}}" required>
 
-      <label id="numetelef" for="apellido">Fecha envio:</label>
-      <input type="datetime-local" id="fecha" name="fecha_envio_detalle_encomienda" value="{{fecha_envio_detalle_encomienda}}" required> <br>
+      <label id="direccion" for="telefonocelu">Direccion :</label>
+      <input type="text" id="direccione" name="direccion_destinatario" value="{{direccion_destinatario}}" required>
 
-      <label id="calle" for="callepri">numero registro detalle encomienda:</label> <br> <br>
-      <input type="text" id="callepri" name="numero_registro_detalle_encomienda"  value="{{numero_registro_detalle_encomienda}}" required>
-     
+      <label id="numetelef2" for="registro">Telefono:</label>
+      <input type="text" id="telefono2" name="telefono_destinatario" value="{{telefono_destinatario}}" required>
+
+
+
+      <u>
+        <h3>Datos de envio</h3>
+      </u>
+
+      <label id="nameco" for="nomcoop">Nombre Cooperativa:</label> <br>
+      <input type="text" id="nomcoop" name="nombres_cooperativa_detalle_encomienda" value="{{nombres_cooperativa_detalle_encomienda}}" required>
+
+      <label id="telfC" for="telefonocelu">Tamaño de encomienda:</label>
+      <input type="text" id="telefonoC" name="tamano_detalle_encomienda" value="{{tamano_detalle_encomienda}}" required>
+
+      <label id="fechaen" for="apellido">Fecha envio:</label>
+      <input type="datetime-local" id="fecha" name="fecha_envio_detalle_encomienda"
+        value="{{fecha_envio_detalle_encomienda}}" required> <br>
+
+      <label id="nroencomienda" for="callepri">Número registro de encomienda:</label> <br> <br>
+      <input type="text" id="encomiendanro" name="numero_registro_detalle_encomienda"
+        value="{{numero_registro_detalle_encomienda}}" required>
+
+<br>
+
+
       <div id="boton">
-        <button type="submit">Actualizar</button>
-      </div>
+        <button type="submit" style="background-color: rgb(73, 73, 218); ">Actualizar</button>
+        <button type="submit" style="background-color: red;">Cancelar</button>
 
+      </div>
+    </div>
 </form>
 {{/each}}
-</div>
+
+<footer id="footer" class="">
+  <div class="container">
+    <div class="row text-left">
+      <div id="contact">
+        <p>Contactanos</p>
+        <img id="btnwasa" src="/img/wasa.png" alt=""><br>
+        <img id="btnmail" src="/img/mail.png" alt=""><br>
+        <img id="btntelef" src="/img/telef.png" alt="">
+        <b><a>Whatsapp</a><br></b>
+        <a>09 3456 7890</a><br> <br>
+        <b><a>Email</a></b><br>
+        <a>hola@tickets.com</a> <br> <br>
+        <b><a>Call Center</a></b><br>
+        <a>+59322 3456 7891</a><br> <br>
+      </div>
+      <div id="destin">
+        <p>Destinos</p>
+        <a href="">Playa</a><br> <br>
+        <a href="">Montaña</a><br> <br>
+        <a href="">Inolvidables eventos</a>
+      </div>
+      <div id="soport">
+        <p>Soporte</p>
+        <a href="">Preguntas frecuentes</a><br> <br>
+        <a href="">Política de privacidad</a><br> <br>
+        <a href="">Términos y condiciones</a><br> <br>
+        <a href="">Inolvidables eventos</a> <br>
+      </div>
+      <div id="follow">
+        <b>
+          <p>Síguenos</p>
+        </b>
+        <a href=""><img id="ig" src="/img/insta.png" alt=""></a>
+        <a href=""><img id="fb" src="/img/fb.png" alt=""></a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>

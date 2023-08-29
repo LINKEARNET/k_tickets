@@ -73,10 +73,12 @@ h3 {
 
 #administrador{
   position: absolute;
-  left: 1100px;
+  left: 1500px;
 }
 
 #container{
+  position: relative;
+  top: 30px;
   max-width: 2000px;
   margin: 50px 110px;
   padding: 20px;
@@ -84,20 +86,19 @@ h3 {
   color: #000000;
 }
 
-.fondo{
+#container .fondo{
   opacity: 0.6;
    width: 1000px;
    height: 525px;
    position: relative;
    left: -15px;
-   top: -62px;
+   top: -10px;
    border-radius: 100px;
 
 }
-#container .h2{
-  position: relative;
-  text-align: center;
-  top: -450px;
+.h2{
+  position: absolute;
+  left: -900px;
 }
 #name{
   font-family: Arial, Helvetica, sans-serif;
@@ -126,7 +127,7 @@ h3 {
 }
 #nroplaca{
   position: absolute;
-  right: 910px;
+  right: 0px;
   top: 270px;
   width: 310px;
   height: 30px;
@@ -457,7 +458,7 @@ background-position: 0 0,15px 15px;
 #container h2{
     position: relative;
     text-align: center;
-    top: -60px;
+    top: -120%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 #container h3{
@@ -650,94 +651,94 @@ button {
 
 
 .container{
-    max-width:840px;
-    margin: 0 auto 8px auto;
-  }
-  #footer{
-    background-color: #1D202A;
-    position: relative;
-    top: 135px;
-    padding: 80px; 
-  }
-  #footer p{
-    position: absolute;
-    color: white;
-    top: 35px;
-  }
-  #contact{
-    position: absolute;
-  }
-  #contact p{
-    position: absolute;
-    top: -65px;
-  }
-  #contact a{
-    position: relative;
-    color: white;
-    left: 80px;
-    top: -50px;
-  }
-  #btnwasa{
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    top: 0px;
-  }
-  #btnmail{
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    top: 75px;
-  }
-  #btntelef{
-    position: absolute;
-    height: 40px;
-    width: 40px; 
-    top: 145px;
-  }
-  #inf a{
-    position: absolute;
-    left: 350px;
-    color: rgb(124, 124, 124);
-  }
-  #destin a{
-    position: absolute;
-    left: 600px;
-    color: rgb(124, 124, 124);
-  }
-  #destin p{
-    position: absolute;
-    left: 600px;
-    color: white;
-  }
-  .soport p{
-    left: 800px;
-  }
-  #soport a{
-    position: absolute;
-    left: 800px;
-    color: rgb(124, 124, 124);
-  }
-  #soport p{
-    position: absolute;
-    left: 800px;
-    color: white;
-  }
-  #follow{
-    position: absolute;
-    top: 0px;
-    left: 1030px;
-  }
-  #fb{
-    position: absolute;
-    height: 40px;
-    width: 40px; 
-    top: 80px;
-  }
-  #ig{
-    position: absolute;
-    height: 40px;
-    width: 40px; 
-    top: 80px;
-    left: 50px;
-  }
+  max-width:840px;
+  margin: 0 auto 8px auto;
+}
+#footer{
+  background-color: #1D202A;
+  position: relative;
+  top: 200px;
+  padding: 100px; 
+}
+#footer p{
+  position: absolute;
+  color: white;
+  top: 35px;
+}
+#contact{
+  position: absolute;
+}
+#contact p{
+  position: absolute;
+  top: -65px;
+}
+#contact a{
+  position: relative;
+  color: white;
+  left: 80px;
+  top: -50px;
+}
+#btnwasa{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  top: 0px;
+}
+#btnmail{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  top: 75px;
+}
+#btntelef{
+  position: absolute;
+  height: 40px;
+  width: 40px; 
+  top: 145px;
+}
+#inf a{
+  position: absolute;
+  left: 350px;
+  color: rgb(124, 124, 124);
+}
+#destin a{
+  position: absolute;
+  left: 600px;
+  color: rgb(124, 124, 124);
+}
+#destin p{
+  position: absolute;
+  left: 600px;
+  color: white;
+}
+.soport p{
+  left: 800px;
+}
+#soport a{
+  position: absolute;
+  left: 800px;
+  color: rgb(124, 124, 124);
+}
+#soport p{
+  position: absolute;
+  left: 800px;
+  color: white;
+}
+#follow{
+  position: absolute;
+  top: 0px;
+  left: 1030px;
+}
+#fb{
+  position: absolute;
+  height: 40px;
+  width: 40px; 
+  top: 80px;
+}
+#ig{
+  position: absolute;
+  height: 40px;
+  width: 40px; 
+  top: 80px;
+  left: 50px;
+}

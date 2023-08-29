@@ -7,8 +7,8 @@
             <div class="navbar">
                 <div id="imagen">
                     <img src="/img/logon.png"></img></div>
-                     <a href="/inicio2">Inicio</a>
-                    <a  href="/cooperativa/listar">Listar</a>
+                     <a id="inicio" href="/inicio2">Inicio</a>
+                    <a id="listar" href="/cooperativa/listar">Listar</a>
                     <a id="administrador" href="#">Administrador</a>
                     <img id="img2" src="/img/perfil.png" alt="">
             </div>
@@ -16,7 +16,7 @@
 </head>
   <div id="container">
     <h2>Registro de Cooperativas</h2>
-    <u><h3>Datos de la cooperativa</h3></u>
+    <u><h3 id="datosCop">Datos de la cooperativa</h3></u>
     
       <label id="nameCoop" for="nombre">Nombre de la cooperativa</label> <br>
       <input type="text" id="nombrecoopera" name="nombres_cooperativa" required>
@@ -54,6 +54,8 @@
         <option >Masculino</option>
         <option >Femenino</option>
       </select> <br> <br>
+
+      <u><h3>Contacto</h3></u>
 
       <label id="telfC" for="telefonocelu">Celular</label> <br>
       <input type="text" id="telefonoC" name="celular_encargado" required>

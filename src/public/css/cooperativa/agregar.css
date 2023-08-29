@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
   }
   #img2{
     position: relative;
@@ -10,7 +10,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    right: 60px;
+    right: 0px;
   }
 #contenedorhe{
     position: absolute;
@@ -78,296 +78,272 @@ body {
   }
   #inicio{
     position: absolute;
-    left: 650px;
+    left: 870px;
+  }
+  #listar{
+    position: absolute;
+    left: 960px;
   }
   
+  
+  #administrador{
+    position: absolute;
+    left: 1050px;
+    }
+  
 #container{
+  position: relative;
+  top: 40px;
     max-width: 2000px;
     margin: 50px 110px;
     background-color: rgba(255, 255, 255, 0.5);
     padding: 20px;
     box-shadow: 0px 0px 10px rgb(0, 0, 0);
     background-image: url(/img/cooperativaCh.png);
+    box-shadow: 0px 0px 20px#05198b;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment:scroll;
+    border-radius: 100px;
+  
+
 }
-#container h2{
+ h2{
     position: relative;
+    top: -71px;
     text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+h3 {
+  position: relative;
+  top: -65px;
+  left: 20px;
+
 }
 #nameCoop{
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  position: relative;
-  top: -635px;
-  left: 75px;
-  color: #272727;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 84px;
+  left: 45px;
 }
 #nombrecoopera{
   position: relative;
-  right: 175px;
-  top: -590px;
-  width: 265px;
+  right: 5px;
+  width: 260px;
   height: 30px;
-  border-radius: 5px;
+  border-radius: 30px;
   padding: 0px, 31px, 0px, 7px;
   border-color: #000000;
   border-width: 2px;
-  border-radius: 30px;
+}
+#datosCop{
+  position: relative;
+  top: -40px;
 }
 #numero{
-  font-family:Georgia, 'Times New Roman', Times, serif;
   position: relative;
-  top: -635px;
-  left: 75px;
-  color: #272727;
+  left: 80px;
+  top: -50px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 #numeroIdent{
   position: relative;
-  right: 175px;
-  top: -590px;
-  width: 265px;
+  width: 250px;
   height: 30px;
-  border-radius: 5px;
-  padding: 0px, 31px, 0px, 7px;
-  border-color: #000000;
-  border-width: 2px;
   border-radius: 30px;
+  padding: 0px, 31px, 0px, 7px;
+  gap: 10px;
+  left: -170px;
 }
 #numTrans{
-  font-family:Georgia, 'Times New Roman', Times, serif;
   position: relative;
-  top: -635px;
-  left: 75px;
-  color: #272727;
+  left: -75px;
+  top: -50px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 #numeroTrans{
   position: relative;
-  right: 175px;
-  top: -590px;
-  width: 265px;
+  top: -40px;
+  right: -695px;
+  width: 140px;
   height: 30px;
-  border-radius: 5px;
-  padding: 0px, 31px, 0px, 7px;
-  border-color: #000000;
-  border-width: 2px;
   border-radius: 30px;
 }
 #horario{
-  font-family:Georgia, 'Times New Roman', Times, serif;
   position: relative;
-  top: -635px;
-  left: 75px;
-  color: #272727;
+  left: 70px;
+  top: -95px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 #horarioAte{
+  top: -45px;
   position: relative;
-  right: 175px;
-  top: -590px;
-  width: 265px;
+  right: 70px;
+  width: 230px;
   height: 30px;
-  border-radius: 5px;
-  padding: 0px, 31px, 0px, 7px;
-  border-color: #000000;
-  border-width: 2px;
   border-radius: 30px;
 }
 #infoConta{
-  font-family:Georgia, 'Times New Roman', Times, serif;
   position: relative;
-  top: -635px;
-  left: 75px;
-  color: #272727;
+  left: 0px;
+  top: -35px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 #informacionContac{
   position: relative;
-  right: 175px;
-  top: -590px;
-  width: 265px;
+  top: -45px;
+  right: 0px;
+  width: 250px;
   height: 30px;
-  border-radius: 5px;
-  padding: 0px, 31px, 0px, 7px;
-  border-color: #000000;
-  border-width: 2px;
   border-radius: 30px;
 }
 
 #nombr{
-  font-family:Georgia, 'Times New Roman', Times, serif;
   position: relative;
-  top: -635px;
-  left: 75px;
-  color: #272727;
+  left: 0px;
+  top: -40px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 #nombres{
+  top: -35px;
   position: relative;
-  right: 175px;
-  top: -590px;
-  width: 265px;
+  right: 0px;
+  width: 250px;
   height: 30px;
-  border-radius: 5px;
-  padding: 0px, 31px, 0px, 7px;
-  border-color: #000000;
-  border-width: 2px;
   border-radius: 30px;
 }
 #apelli{
-  font-family:Georgia, 'Times New Roman', Times, serif;
   position: relative;
-  top: -635px;
-  left: 75px;
-  color: #272727;
+  left: 0px;
+  top: 0px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 #apellido{
+  top: -55px;
   position: relative;
-  right: 175px;
-  top: -590px;
-  width: 265px;
+  right: 0px;
+  width: 250px;
   height: 30px;
-  border-radius: 5px;
-  padding: 0px, 31px, 0px, 7px;
-  border-color: #000000;
-  border-width: 2px;
-  border-radius: 30px;
+  border-radius: 5px 2px;
 }
 #numeroCedu{
-  font-family:Georgia, 'Times New Roman', Times, serif;
   position: relative;
-  top: -635px;
-  left: 75px;
-  color: #272727;
+  left: 80px;
+  top: -75px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 #numCedu{
+  top: -35px;
   position: relative;
-  right: 175px;
-  top: -590px;
-  width: 265px;
+  left: -60px;
+  width: 250px;
   height: 30px;
-  border-radius: 5px;
-  padding: 0px, 31px, 0px, 7px;
-  border-color: #000000;
-  border-width: 2px;
   border-radius: 30px;
+
 }
 #sexo{
-  font-family:Georgia, 'Times New Roman', Times, serif;
   position: relative;
-  top: -635px;
-  left: 75px;
-  color: #272727;
+  left: 50px;
+  top: -76px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 #sexoSele{
   position: relative;
-  right: 175px;
-  top: -590px;
-  width: 265px;
+  top: -143px;
+  left: 670px;
+  width: 250px;
   height: 30px;
-  border-radius: 5px;
-  padding: 0px, 31px, 0px, 7px;
-  border-color: #000000;
-  border-width: 2px;
   border-radius: 30px;
+
 }
 
 #telfC{
-  font-family:Georgia, 'Times New Roman', Times, serif;
   position: relative;
-  top: -635px;
-  left: 75px;
-  color: #272727;
+  left: 0px;
+  top: -30px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 #telefonoC{
+  top: -25px;
   position: relative;
-  right: 175px;
-  top: -590px;
-  width: 265px;
+  right: 0px;
+  width: 250px;
   height: 30px;
-  border-radius: 5px;
-  padding: 0px, 31px, 0px, 7px;
-  border-color: #000000;
-  border-width: 2px;
   border-radius: 30px;
+
 }
 #teleCo{
-  font-family:Georgia, 'Times New Roman', Times, serif;
   position: relative;
-  top: -635px;
-  left: 75px;
-  color: #272727;
+  left: 70px;
+  top: -70px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 #telefonoCo{
+  top: -25px;
   position: relative;
-  right: 175px;
-  top: -590px;
-  width: 265px;
+  right: 100px;
+  width: 250px;
   height: 30px;
-  border-radius: 5px;
-  padding: 0px, 31px, 0px, 7px;
-  border-color: #000000;
-  border-width: 2px;
   border-radius: 30px;
 }
 #email{
-  font-family:Georgia, 'Times New Roman', Times, serif;
   position: relative;
-  top: -635px;
-  left: 75px;
-  color: #272727;
+  left: 30px;
+  top: -70px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 #Email{
-    position: relative;
-    right: 175px;
-    top: -590px;
-    width: 265px;
-    height: 30px;
-    border-radius: 5px;
-    padding: 0px, 31px, 0px, 7px;
-    border-color: #000000;
-    border-width: 2px;
-    border-radius: 30px;
+  top: -25px;
+  position: relative;
+  right: 35px;
+  width: 260px;
+  height: 30px;
+  border-radius: 30px;
 }
 #area{
-  font-family:Georgia, 'Times New Roman', Times, serif;
   position: relative;
-  top: -635px;
-  left: 75px;
-  color: #272727;
+  left: 1px;
+  top: 15px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 #AreaTra{
   position: relative;
-  right: 175px;
-  top: -590px;
-  width: 265px;
+  right: 0px;
+  width: 310px;
   height: 30px;
-  border-radius: 5px;
-  padding: 0px, 31px, 0px, 7px;
-  border-color: #000000;
-  border-width: 2px;
-  border-radius: 30px;
+  border-radius: 5px 2px;
 }
-#cancel{
-    position: relative;
-    left: 1000px;
-    width: 100px;
-    height: 50px;
-    border-radius: 20px;
-    background-color: #FF0D0D;
-    color: white;
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  float: left;
+  margin-right: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  position: relative;
+  left: 350px;
+  top: -55px;
+  border-top-left-radius: 0cm;
 }
-#save{
-    position: relative;
-    left: 780px;
-    width: 265px;
-    height: 50px;
-    border-radius: 20px;
-    background-color: #0084FF;
-    color: white;
+
+.registrarse button {
+  background-color: #2579e6;
+}
+
+
+.cancelar button {
+  background-color: #ec0d0d;
 }
 
 .container{
-    max-width:840px;
-    margin: 0 auto 8px auto;
-  }
+  max-width:840px;
+  margin: 0 auto 8px auto;
+}
   #footer{
     background-color: #1D202A;
     position: relative;

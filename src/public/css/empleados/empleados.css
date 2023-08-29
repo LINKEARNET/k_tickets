@@ -2,11 +2,10 @@ body {
   margin: 0px;
   padding: 0px;
   background-color: #f4f4f4;
-  background-image:  radial-gradient(#040a84 0.75px, transparent 0.75px), radial-gradient(#040a84 0.75px, #e5e5f7 0.75px);
-  background-size: 30px 30px;
-  background-position: 0 0,15px 15px;
+  
 }
-#img2{
+
+#img2 {
   position: relative;
   width: 67px;
   height: 63px;
@@ -15,7 +14,8 @@ body {
   background-attachment: fixed;
   right: -10px;
 }
-#contenedorhe{
+
+#contenedorhe {
   position: absolute;
   top: 0%;
   left: 0%;
@@ -24,7 +24,8 @@ body {
   max-width: 100%;
   max-height: 100%;
 }
-#contenedor{
+
+#contenedor {
   position: relative;
   top: 0%;
   left: 0%;
@@ -35,38 +36,40 @@ body {
 }
 
 .navbar {
-    background-color: #1D202B;
-    overflow: hidden;
-  }
+  background-color: #1D202B;
+  overflow: hidden;
+}
 
-  .navbar a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 12px 10px;
-    text-decoration: none;
-  }
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px 10px;
+  text-decoration: none;
+}
 
-  .navbar a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  #imagen{
-    width: 100%;
-    height: 100%;
-    max-width: 50%;
-    max-height: 100%;
-  }
-  #imagen img{
-    width: 20%;
-    height: 40%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  }
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
 
-#boton{
+#imagen {
+  width: 100%;
+  height: 100%;
+  max-width: 50%;
+  max-height: 100%;
+}
+
+#imagen img {
+  width: 20%;
+  height: 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#boton {
   width: 160px;
   height: 48px;
   background-color: #F28705;
@@ -81,438 +84,554 @@ body {
   right: 100px;
   position: relative;
 }
-#inicio{
+
+#inicio {
   position: absolute;
   left: 900px;
 }
-#listar{
+
+#listar {
   position: absolute;
   left: 985px;
 }
 
-#administrador{
+#administrador {
   position: absolute;
   left: 1065px;
 }
 
-#container{
+#container {
   position: relative;
-  left: 35px;
+  top: 60px;
+  left: 20px;
   width: 1000px;
   max-width: 1000px;
   height: 880px;
   margin: 75px 160px;
   padding: 15px;
   box-shadow: 0px 0px 20px#05198b;
-  background-color:#b3b3b3;
+  background-color: #b3b3b3;
   color: #000000;
   border-radius: 100px;
 }
-.fondo{
-opacity: 0.6;
- width: 1000px;
- height: 882px;
- position: relative;
- left: -15px;
- top: -62px;
- border-radius: 100px;
+
+.fondo {
+  opacity: 0.6;
+  width: 1000px;
+  height: 882px;
+  position: relative;
+  left: -15px;
+  top: -62px;
+  border-radius: 100px;
 
 }
-#container h2{
-position: relative;
-text-align: center;
-top: -60px;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-#container h3{
-position: relative;
-text-align: left;
-top: -900px;
 
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-color: #000000;
-}
-#name{
-font-family:Georgia, 'Times New Roman', Times, serif;
-position: relative;
-top: -895px;
-left: 25px;
-color: #000000;
-}
-#nombre{
-position: relative;
-right: 0px;
-top: -890px;
-width: 265px;
-height: 30px;
-border-radius: 5px;
-padding: 0px, 31px, 0px, 7px;
-border-color: #000000;
-border-width: 2px;
-border-radius: 30px;
-}
-#apelli{
-font-family:Georgia, 'Times New Roman', Times, serif;
-position: relative;
-top: -935px;
-left: 75px;
-color: #000000;
-}
-#apellido{
-position: relative;
-right: 25px;
-top: -890px;
-width: 265px;
-height: 30px;
-border-radius: 5px;
-padding: 0px, 31px, 0px, 7px;
-border-color: #000000;
-border-width: 2px;
-border-radius: 30px;
-}
-#date{
-font-family:Georgia, 'Times New Roman', Times, serif;
-position: relative;
-top: -935px;
-left: 75px;
-color: #000000;
-}
-#fecha_nacimiento{
-position: relative;
-left: 650px;
-top: -926px;
-width: 265px;
-height: 30px;
-border-radius: 5px;
-padding: 0px, 31px, 0px, 7px;
-border-color: #000000;
-border-width: 2px;
-border-radius: 30px;
-}
-#numce{
-font-family:Georgia, 'Times New Roman', Times, serif;
-position: relative;
-top: -935px;
-left: 23px;
-color: #000000;
-}
-#cedula{
-position: relative;
-right: 0px;
-top: -926px;
-width: 265px;
-height: 30px;
-border-radius: 5px;
-padding: 0px, 31px, 0px, 7px;
-border-color: #000000;
-border-width: 2px;
-border-radius: 30px;;
-}
-#sexo{
-font-family:Georgia, 'Times New Roman', Times, serif;
-position: relative;
-top: -972px;
-left: 75px;
-color: #000000;
-}
-#sexoSele{
-position: relative;
-right: 0px;
-top: -926px;
-width: 265px;
-height: 30px;
-border-radius: 5px;
-padding: 0px, 31px, 0px, 7px;
-border-color: #000000;
-border-width: 2px;
-border-radius: 30px;
+#container h2 {
+  position: relative;
+  text-align: center;
+  top: -60px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-#canton{
-font-family:Georgia, 'Times New Roman', Times, serif;
-position: relative;
-top: 35px;
-left: 0px;
-color: #000000;
-}
-#cantonIn{
-position: relative;
-right: 175px;
-top: -590px;
-width: 265px;
-height: 30px;
-border-radius: 5px;
-padding: 0px, 31px, 0px, 7px;
-border-color: #000000;
-border-width: 2px;
-border-radius: 30px;
-}
-#pronvin{
-font-family:Georgia, 'Times New Roman', Times, serif;
-position: relative;
-top: -635px;
-left: 75px;
-color: #000000;
-}
-#provincia{
-position: relative;
-right: 175px;
-top: -590px;
-width: 265px;
-height: 30px;
-border-radius: 5px;
-padding: 0px, 31px, 0px, 7px;
-border-color: #000000;
-border-width: 2px;
-border-radius: 30px;
-}
-#sect{
-font-family:Georgia, 'Times New Roman', Times, serif;
-position: relative;
-top: -635px;
-left: 75px;
-color: #000000;
-}
-#sector{
-position: relative;
-right: 175px;
-top: -590px;
-width: 265px;
-height: 30px;
-border-radius: 5px;
-padding: 0px, 31px, 0px, 7px;
-border-color: #000000;
-border-width: 2px;
-border-radius: 30px;
-}
-#calleSe{
-font-family:Georgia, 'Times New Roman', Times, serif;
-position: relative;
-top: -895px;
-left: 26px;
-color: #000000;
-}
-#callesecu{
-position: relative;
-right: 0px;
-top: -890px;
-width: 265px;
-height: 30px;
-border-radius: 5px;
-padding: 0px, 31px, 0px, 7px;
-border-color: #000000;
-border-width: 2px;
-border-radius: 30px;
-}
-#calleP{
-font-family:Georgia, 'Times New Roman', Times, serif;
-position: relative;
-top: -925px;
-left: 75px;
-color: #000000;
-}
-#callepri{
-position: relative;
-right: 65px;
-top: -890px;
-width: 265px;
-height: 30px;
-border-radius: 5px;
-padding: 0px, 31px, 0px, 7px;
-border-color: #000000;
-border-width: 2px;
-border-radius: 30px;
+#container h3 {
+  position: relative;
+  text-align: left;
+  top: -900px;
+
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #000000;
 }
 
-#telfC{
-font-family:Georgia, 'Times New Roman', Times, serif;
-position: relative;
-top: -895px;
-left: 23px;
-color: #000000;
+#name {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: relative;
+  top: -895px;
+  left: 25px;
+  color: #000000;
 }
-#telefonoC{
-position: relative;
-right: 0px;
-top: -890px;
-width: 265px;
-height: 30px;
-border-radius: 5px;
-padding: 0px, 31px, 0px, 7px;
-border-color: #000000;
-border-width: 2px;
-border-radius: 30px;
+
+#nombre {
+  position: relative;
+  right: 0px;
+  top: -890px;
+  width: 265px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0px, 31px, 0px, 7px;
+  border-color: #000000;
+  border-width: 2px;
+  border-radius: 30px;
 }
-#teleCo{
-font-family:Georgia, 'Times New Roman', Times, serif;
-position: relative;
-top: -930px;
-left: 75px;
-color: #000000;
+
+#apelli {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: relative;
+  top: -935px;
+  left: 75px;
+  color: #000000;
 }
-#telefonoCo{
-position: relative;
-right: 125px;
-top: -890px;
-width: 265px;
-height: 30px;
-border-radius: 5px;
-padding: 0px, 31px, 0px, 7px;
-border-color: #000000;
-border-width: 2px;
-border-radius: 30px;
+
+#apellido {
+  position: relative;
+  right: 25px;
+  top: -890px;
+  width: 265px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0px, 31px, 0px, 7px;
+  border-color: #000000;
+  border-width: 2px;
+  border-radius: 30px;
 }
-#email{
-font-family:Georgia, 'Times New Roman', Times, serif;
-position: relative;
-top: -930px;
-left: 0px;
-color: #000000;
+
+#date {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: relative;
+  top: -935px;
+  left: 75px;
+  color: #000000;
 }
-#Email{
-position: relative;
-left: 650px;
-top: -926px;
-width: 265px;
-height: 30px;
-border-radius: 5px;
-padding: 0px, 31px, 0px, 7px;
-border-color: #000000;
-border-width: 2px;
-border-radius: 30px;
+
+#fecha_nacimiento {
+  position: relative;
+  left: 650px;
+  top: -926px;
+  width: 265px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0px, 31px, 0px, 7px;
+  border-color: #000000;
+  border-width: 2px;
+  border-radius: 30px;
 }
-#area{
-font-family:Georgia, 'Times New Roman', Times, serif;
-position: relative;
-top: -885px;
-right: 245px;
-color: #000000;
+
+#numce {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: relative;
+  top: -935px;
+  left: 23px;
+  color: #000000;
 }
-#AreaTra{
-position: relative;
-right: 0px;
-top: -900px;
-width: 265px;
-height: 30px;
-border-radius: 5px;
-padding: 0px, 31px, 0px, 7px;
-border-color: #000000;
-border-width: 2px;
-border-radius: 30px;
+
+#cedula {
+  position: relative;
+  right: 0px;
+  top: -926px;
+  width: 265px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0px, 31px, 0px, 7px;
+  border-color: #000000;
+  border-width: 2px;
+  border-radius: 30px;
+  ;
 }
+
+#sexo {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: relative;
+  top: -972px;
+  left: 75px;
+  color: #000000;
+}
+
+#sexoSele {
+  position: relative;
+  right: 0px;
+  top: -926px;
+  width: 265px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0px, 31px, 0px, 7px;
+  border-color: #000000;
+  border-width: 2px;
+  border-radius: 30px;
+}
+
+#canton {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: relative;
+  top: 35px;
+  left: 0px;
+  color: #000000;
+}
+
+#cantonIn {
+  position: relative;
+  right: 175px;
+  top: -590px;
+  width: 265px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0px, 31px, 0px, 7px;
+  border-color: #000000;
+  border-width: 2px;
+  border-radius: 30px;
+}
+
+#pronvin {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: relative;
+  top: -635px;
+  left: 75px;
+  color: #000000;
+}
+
+#provincia {
+  position: relative;
+  right: 175px;
+  top: -590px;
+  width: 265px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0px, 31px, 0px, 7px;
+  border-color: #000000;
+  border-width: 2px;
+  border-radius: 30px;
+}
+
+#sect {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: relative;
+  top: -635px;
+  left: 75px;
+  color: #000000;
+}
+
+#sector {
+  position: relative;
+  right: 175px;
+  top: -590px;
+  width: 265px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0px, 31px, 0px, 7px;
+  border-color: #000000;
+  border-width: 2px;
+  border-radius: 30px;
+}
+
+#calleSe {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: relative;
+  top: -895px;
+  left: 26px;
+  color: #000000;
+}
+
+#callesecu {
+  position: relative;
+  right: 0px;
+  top: -890px;
+  width: 265px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0px, 31px, 0px, 7px;
+  border-color: #000000;
+  border-width: 2px;
+  border-radius: 30px;
+}
+
+#calleP {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: relative;
+  top: -925px;
+  left: 75px;
+  color: #000000;
+}
+
+#callepri {
+  position: relative;
+  right: 65px;
+  top: -890px;
+  width: 265px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0px, 31px, 0px, 7px;
+  border-color: #000000;
+  border-width: 2px;
+  border-radius: 30px;
+}
+
+#telfC {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: relative;
+  top: -895px;
+  left: 23px;
+  color: #000000;
+}
+
+#telefonoC {
+  position: relative;
+  right: 0px;
+  top: -890px;
+  width: 265px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0px, 31px, 0px, 7px;
+  border-color: #000000;
+  border-width: 2px;
+  border-radius: 30px;
+}
+
+#teleCo {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: relative;
+  top: -930px;
+  left: 75px;
+  color: #000000;
+}
+
+#telefonoCo {
+  position: relative;
+  right: 125px;
+  top: -890px;
+  width: 265px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0px, 31px, 0px, 7px;
+  border-color: #000000;
+  border-width: 2px;
+  border-radius: 30px;
+}
+
+#email {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: relative;
+  top: -930px;
+  left: 0px;
+  color: #000000;
+}
+
+#Email {
+  position: relative;
+  left: 650px;
+  top: -926px;
+  width: 265px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0px, 31px, 0px, 7px;
+  border-color: #000000;
+  border-width: 2px;
+  border-radius: 30px;
+}
+
+#area {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: relative;
+  top: -885px;
+  right: 245px;
+  color: #000000;
+}
+
+#AreaTra {
+  position: relative;
+  right: 0px;
+  top: -900px;
+  width: 265px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0px, 31px, 0px, 7px;
+  border-color: #000000;
+  border-width: 2px;
+  border-radius: 30px;
+}
+
 button {
-background-color: #4CAF50;
-color: white;
-border: none;
-padding: 10px 20px;
-border-radius: 15px;
-float: left;
-margin-right: 10px;
-cursor: pointer;
-margin-bottom: 10px;
-position: relative;
-left: 380px;
-top: -825px;
-border-top-left-radius: 0cm;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  float: left;
+  margin-right: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  position: relative;
+  left: 380px;
+  top: -825px;
+  border-top-left-radius: 0cm;
 }
 
 .registrarse button {
-background-color: #2579e6;
+  background-color: #2579e6;
 }
 
 
 .cancelar button {
-background-color: #ec0d0d;
+  background-color: #ec0d0d;
 }
-.container{
-max-width:1040px;
-margin: 0 auto 8px auto;
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto 8px auto;
 }
-#footer{
+
+#footer {
   background-color: #1D202A;
   position: relative;
-  top: 100px;
-  padding: 100px; 
+  top: 290px;
+  padding: 100px;
 }
-#footer p{
+
+#footer p {
   position: absolute;
   color: white;
   top: 35px;
 }
-#contact{
+
+#contact {
   position: absolute;
 }
-#contact p{
+
+#contact p {
   position: absolute;
   top: -65px;
 }
-#contact a{
+
+#contact a {
   position: relative;
   color: white;
   left: 80px;
   top: -50px;
 }
-#btnwasa{
+
+#btnwasa {
   position: absolute;
   height: 40px;
   width: 40px;
   top: 0px;
 }
-#btnmail{
+
+#btnmail {
   position: absolute;
   height: 40px;
   width: 40px;
   top: 75px;
 }
-#btntelef{
+
+#btntelef {
   position: absolute;
   height: 40px;
-  width: 40px; 
+  width: 40px;
   top: 145px;
 }
-#inf a{
+
+#inf a {
   position: absolute;
   left: 350px;
   color: rgb(124, 124, 124);
 }
-#destin a{
+
+#destin a {
   position: absolute;
   left: 600px;
   color: rgb(124, 124, 124);
 }
-#destin p{
+
+#destin p {
   position: absolute;
   left: 600px;
   color: white;
 }
-.soport p{
+
+.soport p {
   left: 800px;
 }
-#soport a{
+
+#soport a {
   position: absolute;
   left: 800px;
   color: rgb(124, 124, 124);
 }
-#soport p{
+
+#soport p {
   position: absolute;
   left: 800px;
   color: white;
 }
-#follow{
+
+#follow {
   position: absolute;
   top: 0px;
   left: 1030px;
 }
-#fb{
+
+#fb {
   position: absolute;
   height: 40px;
-  width: 40px; 
+  width: 40px;
   top: 80px;
 }
-#ig{
+
+#ig {
   position: absolute;
   height: 40px;
-  width: 40px; 
+  width: 40px;
   top: 80px;
   left: 50px;
+}
+
+/* Añade Media Queries para ajustar estilos en pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0;
+  }
+
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #imagen {
+    width: 100%;
+    height: 100%;
+    max-width: 50%;
+    max-height: 100%;
+
+  }
+
+  #boton-container {
+    text-align: center;
+  }
+
+  #boton {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    margin: 0;
+  }
+
+  .nav .nav a .nav.a:hover {
+    height: calc(var(--header-height) + 1.5rem);
+  }
+
+
+  /* Ajusta estilos para pantallas aún más pequeñas aquí */
+  #imagen {
+    width: 50%;
+    height: 50%;
+    max-width: 50%;
+    max-height: 50%;
+
+  }
+}
+
+#fondo {
+  opacity: 0.6;
+  width: 500px;
+  height: 650px;
+  position: relative;
+  left: -15px;
+  top: -62px;
+  border-radius: 100px;
+
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
 }

@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/src/public/css/Encomienda/listar.css">
+<link rel="stylesheet" href="/css/encomienda/listar.css">
 <form action="encomienda/listar/" method="get"></form>
 <head>
     <div id="contendodrhe">
@@ -12,7 +12,7 @@
             </div>
     </div>
 </head>
-<h1>Registro de Encomiendas</h1>
+<h1>lista de Encomiendas Registradas</h1>
 <div id="contenedor">
     
     <div class="row">
@@ -31,10 +31,8 @@
             <div>
                 <p>{{email_remitente}}</p>
             </div>
-            <div>
-                
-        <div id="tarjeta">
-            <u><h2>Destinatario</h2></u>
+        
+    
              <div>
                 <p>{{nombres_destinatario}}</p>
             </div>
@@ -47,10 +45,6 @@
             <div>
                 <p>{{telefono_destinatario}}</p>
             </div>
-             <div id="tarjeta">
-            
-            <u><h2>Datos de envio</h2></u>
-
             <div>
                 <p>{{nombres_cooperativa_detalle_encomienda}}</p>
             </div>
@@ -63,7 +57,7 @@
             <div>
                 <p>{{numero_registro_detalle_encomienda}}</p>
             </div>            
-            </div>
+         
                 <div>
                     <a href="/encomienda/editar/{{id_encomienda_remitente}}"><button type="button">Editar</button></a>
                 </div>
@@ -75,25 +69,39 @@
     </div>
 </div>
 
-<footer id="footer" class="">
+ <footer id="footer" class="">
       <div class="container">
         <div class="row text-left">
-          <div class="contact">
+          <div id="contact">
             <p>Contactanos</p>
             <img id="btnwasa" src="/img/wasa.png" alt=""><br>
             <img id="btnmail" src="/img/mail.png" alt=""><br>
             <img id="btntelef" src="/img/telef.png" alt="">
+            <b><a>Whatsapp</a><br></b>
+            <a>09 3456 7890</a><br> <br>
+            <b><a>Email</a></b><br> 
+            <a>hola@tickets.com</a> <br> <br>
+            <b><a>Call Center</a></b><br> 
+            <a>+59322 3456 7891</a><br> <br>
           </div>
           <div id="destin">
-            <p>Destinos</p><br>
-            <a>Playa</a><br>
-            <a>Montaña</a><br>
-            <a>Inolvidables eventos</a>
+            <p>Destinos</p>
+            <a href="">Playa</a><br> <br>
+            <a href="">Montaña</a><br> <br>
+            <a href="">Inolvidables eventos</a>
           </div>
-          <div class="soport">
+          <div id="soport">
             <p>Soporte</p>
-            
+            <a href="">Preguntas frecuentes</a><br> <br>
+            <a href="">Política de privacidad</a><br> <br>
+            <a href="">Términos y condiciones</a><br> <br>
+            <a href="">Inolvidables eventos</a> <br>
+          </div>
+          <div id="follow">
+           <b> <p>Síguenos</p></b>
+           <a href=""><img id="ig" src="/img/insta.png" alt=""></a>
+           <a href=""><img id="fb" src="/img/fb.png" alt=""></a>
           </div>
         </div>
       </div>
-</footer>
+    </footer>
