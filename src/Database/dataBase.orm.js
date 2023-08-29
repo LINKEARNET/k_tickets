@@ -27,15 +27,8 @@ sequelize.sync({ force: false })
 	const choferModel = require('../models/chofer');
 	const ciudadModel = require('../models/ciudad');
 	const cooperativaModel = require('../models/cooperativa');
-	//const detalleCooperativaModel = require('../models/detalle_cooperativa');
-	//const detalleEncomiendaModel = require('../models/detalle_encomienda');
-	//const detalleTransporteModel = require('../models/detalle_transporte');
 	const empleadoModel = require('../models/empleado');
-	//const encargadoModel = require('../models/encargado');
-	//const encomiendaDestinatarioModel = require('../models/encomienda_destinatario');
 	const encomiendaRemitenteModel = require('../models/encomienda_remitente');
-	//const licenciaModel = require('../models/licencia');
-	//const rutaModel = require('../models/ruta');
 	const terminalModel = require('../models/terminal');
 
 
@@ -45,9 +38,7 @@ const bus =  busModel(sequelize, Sequelize)
 const chofer =  choferModel(sequelize, Sequelize)
 const ciudad =  ciudadModel(sequelize, Sequelize)
 const cooperativa =  cooperativaModel(sequelize, Sequelize)
-//const detalle_cooperativa =  detalleCooperativaModel(sequelize, Sequelize)
-//const detalle_encomienda =  detalleEncomiendaModel(sequelize, Sequelize)
-//const detalle_transporte =  detalleTransporteModel(sequelize, Sequelize)
+
 const empleado =  empleadoModel(sequelize, Sequelize)
 //const encargado =  encargadoModel(sequelize, Sequelize)
 //const encomienda_destinatario =  encomiendaDestinatarioModel(sequelize, Sequelize)
